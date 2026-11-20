@@ -1,0 +1,130 @@
+<section id="agenths-architecture">
+  <style>
+    #agenths-architecture { color: var(--foreground, #182435); }
+    #agenths-architecture svg { display: block; width: 100%; height: auto; font-family: inherit; }
+    #agenths-architecture .panel { fill: var(--muted, #f2f5f8); stroke: var(--border, #ccd5df); }
+    #agenths-architecture .focus { fill: color-mix(in srgb, var(--blue, #3069a9) 9%, var(--background, #ffffff)); stroke: var(--blue, #3069a9); }
+    #agenths-architecture .module { fill: var(--background, #ffffff); stroke: var(--border, #ccd5df); }
+    #agenths-architecture .wire { fill: none; stroke: var(--muted-foreground, #536477); stroke-width: 1.65; marker-end: url(#agenths-arrow); }
+    #agenths-architecture .branch { fill: none; stroke: var(--muted-foreground, #536477); stroke-width: 1.65; }
+    #agenths-architecture .head { fill: currentColor; font-size: 17px; font-weight: 600; }
+    #agenths-architecture .body { fill: currentColor; font-size: 15px; }
+    #agenths-architecture .detail { fill: var(--muted-foreground, #536477); font-size: 14px; }
+    #agenths-architecture .rule { stroke: var(--border, #ccd5df); }
+    #agenths-architecture .compact { display: none; }
+    @media (max-width: 694px) {
+      #agenths-architecture svg { display: none; }
+      #agenths-architecture .compact { display: grid; gap: 10px; }
+      #agenths-architecture .compact article {
+        border-inline-start: 2px solid var(--border, #ccd5df);
+        padding-inline-start: 10px;
+      }
+      #agenths-architecture .compact article:nth-child(3) { border-color: var(--blue, #3069a9); }
+      #agenths-architecture .compact h3 { margin: 0; font-size: 1em; }
+      #agenths-architecture .compact p { margin: 3px 0 0; }
+    }
+  </style>
+  <svg viewBox="0 0 960 662" role="img" aria-labelledby="agenths-svg-title agenths-svg-desc">
+    <title id="agenths-svg-title">AgentHS codebase architecture</title>
+    <desc id="agenths-svg-desc">The Streamlit UI and project tooling connect to FastAPI. FastAPI serves resume ingestion, the LangGraph screening package, and email notifications. LangGraph coordinates job retrieval, the Evaluator, GitHub, ranking, and the Report agent. Shared model and database services support the app. Original resumes stay on disk. PostgreSQL holds vectors, results, and checkpoints. GitHub and SMTP are the external services.</desc>
+    <defs>
+      <marker id="agenths-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0 L7 4 L0 8 Z" fill="var(--muted-foreground, #536477)"/>
+      </marker>
+    </defs>
+
+    <path class="wire" d="M265 49 H350"/>
+    <path class="wire" d="M695 49 H610"/>
+    <path class="branch" d="M480 84 V114 M128 114 H832"/>
+    <path class="wire" d="M128 114 V144"/>
+    <path class="wire" d="M480 114 V144"/>
+    <path class="wire" d="M832 114 V144"/>
+    <path class="wire" d="M680 217 H718"/>
+    <path class="wire" d="M128 391 V443"/>
+    <path class="wire" d="M480 391 V443"/>
+    <path class="wire" d="M832 391 V443"/>
+    <path class="wire" d="M639 391 V417 H770 V443"/>
+    <path class="wire" d="M480 544 V573"/>
+
+    <rect class="panel" x="35" y="14" width="230" height="70" rx="8"/>
+    <text class="head" x="52" y="43">Streamlit UI</text>
+    <text class="detail" x="52" y="65">Upload, screen, review results</text>
+
+    <rect class="focus" x="350" y="14" width="260" height="70" rx="8"/>
+    <text class="head" x="368" y="43">FastAPI</text>
+    <text class="detail" x="368" y="65">app/api.py · routes and startup</text>
+
+    <rect class="panel" x="695" y="14" width="230" height="70" rx="8"/>
+    <text class="head" x="712" y="43">Project tooling</text>
+    <text class="detail" x="712" y="65">scripts/ · tests/ · Docker Compose</text>
+
+    <rect class="panel" x="16" y="144" width="224" height="247" rx="8"/>
+    <text class="head" x="33" y="172">Resume ingestion</text>
+    <text class="detail" x="33" y="194">app/ingest/</text>
+    <line class="rule" x1="33" x2="223" y1="207" y2="207"/>
+    <text class="body" x="33" y="239">Upload pipeline</text>
+    <text class="detail" x="33" y="260">Parse PDF or DOCX and clean text</text>
+    <text class="body" x="33" y="291">Extract metadata</text>
+    <text class="detail" x="33" y="312">Skills, contact, and GitHub links</text>
+    <text class="body" x="33" y="343">Chunk and embed</text>
+    <text class="detail" x="33" y="364">Index evidence for retrieval</text>
+
+    <rect class="focus" x="280" y="144" width="400" height="247" rx="8"/>
+    <text class="head" x="297" y="172">Screening and agents</text>
+    <text class="detail" x="591" y="172" text-anchor="end">app/screening/</text>
+    <rect class="module" x="297" y="197" width="366" height="40" rx="6"/>
+    <text class="body" x="480" y="222" text-anchor="middle">LangGraph · graph.py + state.py</text>
+    <path class="branch" d="M480 237 V333"/>
+    <path class="wire" d="M480 277 H463"/>
+    <path class="wire" d="M480 277 H497"/>
+    <path class="wire" d="M480 333 H463"/>
+    <path class="wire" d="M480 333 H497"/>
+    <rect class="module" x="297" y="255" width="166" height="43" rx="6"/>
+    <text class="body" x="380" y="282" text-anchor="middle">JD parser and retrieval</text>
+    <rect class="module" x="497" y="255" width="166" height="43" rx="6"/>
+    <text class="body" x="580" y="282" text-anchor="middle">Evaluator and verifier</text>
+    <rect class="module" x="297" y="311" width="166" height="43" rx="6"/>
+    <text class="body" x="380" y="338" text-anchor="middle">GitHub agent</text>
+    <rect class="module" x="497" y="311" width="166" height="43" rx="6"/>
+    <text class="body" x="580" y="338" text-anchor="middle">Ranking and Report</text>
+    <text class="detail" x="297" y="376">Evaluator and GitHub run in parallel for each candidate.</text>
+
+    <rect class="panel" x="720" y="144" width="224" height="247" rx="8"/>
+    <text class="head" x="737" y="172">Candidate email</text>
+    <text class="detail" x="737" y="194">app/notify/</text>
+    <line class="rule" x1="737" x2="927" y1="207" y2="207"/>
+    <text class="body" x="737" y="239">Selection and drafts</text>
+    <text class="detail" x="737" y="260">Rank policy and Jinja templates</text>
+    <text class="body" x="737" y="291">Recruiter approval</text>
+    <text class="detail" x="737" y="312">LangGraph pauses for review</text>
+    <text class="body" x="737" y="343">Delivery and status</text>
+    <text class="detail" x="737" y="364">Dry run or SMTP</text>
+
+    <rect class="panel" x="16" y="443" width="224" height="101" rx="8"/>
+    <text class="head" x="33" y="472">Original resume files</text>
+    <text class="detail" x="33" y="495">data/uploads/</text>
+    <text class="detail" x="33" y="518">PDF and DOCX on disk</text>
+
+    <rect class="panel" x="280" y="443" width="400" height="101" rx="8"/>
+    <text class="head" x="297" y="472">Shared app services</text>
+    <text class="body" x="297" y="496">Local llama.cpp model · CPU embeddings</text>
+    <text class="detail" x="297" y="520">DB pool · caches · configuration · Pydantic schemas</text>
+
+    <rect class="panel" x="720" y="443" width="224" height="101" rx="8"/>
+    <text class="head" x="737" y="472">External services</text>
+    <text class="detail" x="737" y="495">GitHub agent → Public REST API</text>
+    <text class="detail" x="737" y="518">Mailer → Configured SMTP server</text>
+
+    <rect class="panel" x="280" y="573" width="400" height="76" rx="8"/>
+    <text class="head" x="297" y="603">PostgreSQL + pgvector</text>
+    <text class="detail" x="297" y="628">Resumes, vectors, JDs, results, emails, checkpoints</text>
+  </svg>
+  <div class="compact" aria-label="AgentHS codebase architecture">
+    <article><h3>Streamlit UI ↔ FastAPI</h3><p>Uploads, screening, ranked results, and recruiter approval.</p></article>
+    <article><h3>FastAPI → Resume ingestion</h3><p>Parses, cleans, chunks, and embeds documents. Original files go to <code>data/uploads/</code>.</p></article>
+    <article><h3>FastAPI → LangGraph screening</h3><p>JD parser and retrieval supply the Evaluator and GitHub branches. The verifier checks evidence for Python ranking and the Report agent.</p></article>
+    <article><h3>LangGraph → Candidate email</h3><p>Selection rules, templates, recruiter approval, and dry-run or SMTP delivery.</p></article>
+    <article><h3>Shared services and data</h3><p>Local LLM and CPU embeddings. PostgreSQL stores vectors, results, email status, and checkpoints through the DB pool and caches.</p></article>
+    <article><h3>External services and tooling</h3><p>Public GitHub API, SMTP, Docker Compose, migration and check scripts, and tests.</p></article>
+  </div>
+</section>

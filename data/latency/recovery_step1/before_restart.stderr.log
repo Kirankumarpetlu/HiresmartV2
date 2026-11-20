@@ -1,0 +1,12 @@
+INFO:     Started server process [27768]
+INFO:     Waiting for application startup.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 2391.01it/s]
+D:\agentHS\app\services\embed_service.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if model.get_sentence_embedding_dimension() != settings.embed_dim:
+D:\agentHS\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8011 (Press CTRL+C to quit)
+D:\agentHS\.venv\Lib\site-packages\pydantic\main.py:520: UserWarning: Pydantic serializer warnings:
+  PydanticSerializationUnexpectedValue(Expected `tuple[RequestedSkill0, RequestedSkill1, RequestedSkill2]` - serialized value may not be as expected [field_name='skills', input_value=[RequestedSkill0(skill='P...ence.', confidence=0.0)], input_type=list])
+  return self.__pydantic_serializer__.to_python(

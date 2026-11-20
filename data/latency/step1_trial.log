@@ -1,0 +1,49 @@
+INFO:app.timing:Pipeline stage=startup.database latency=0.052143s success=True
+INFO:app.timing:Pipeline stage=startup.database latency=0.068209s success=True
+INFO:app.timing:Pipeline stage=startup.database latency=0.042604s success=True
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2FREADME.md=&etag=%2258b129f71f56062384cdc8e704480a73ed38d03f%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%22ea85692bff64b0d1917833c31ddbca8ab10f5455%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22da5bfd57e34ca45582e4bdbaa3e6deb9efffa08d%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:app.services.embed_service:CPU embedder loaded in 4.86s
+INFO:app.timing:Pipeline stage=startup.embedder latency=34.359869s success=True
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct-GGUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct-GGUF/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf "HTTP/1.1 302 Found"
+INFO:app.services.llm_service:LLM loaded in 3.80s; GPU layers offloaded=37
+INFO:app.timing:Pipeline stage=startup.llm latency=101.045302s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.003649s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.008431s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.002436s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.003603s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.002907s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.220284s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000949s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.004733s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.249357s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.004314s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.011195s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000091s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000534s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001639s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.002727s success=False
+INFO:app.timing:Pipeline stage=ingest.total latency=0.023145s success=False

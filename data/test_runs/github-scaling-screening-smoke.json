@@ -1,0 +1,17 @@
+{
+  "before": {
+    "final_score": 57.375,
+    "github_status": "pending"
+  },
+  "after": {
+    "final_score": 57.4375,
+    "github_status": "ok",
+    "github_score": 58
+  },
+  "worker": {
+    "cache_hits": 6,
+    "network_calls": 0,
+    "queue_depth": 0
+  },
+  "notification_rows": 0
+}

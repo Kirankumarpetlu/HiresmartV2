@@ -1,0 +1,158 @@
+{
+  "measured_at": "2026-11-17T09:09:52.592175+00:00",
+  "synthetic": true,
+  "scope": "Local function calls with real models/database; excludes network upload, queue wait and UI polling",
+  "jd_id": "e4e8930a-4989-4114-ad96-018f6c81bb54",
+  "resume_id": "8be897dc-5b2b-46cc-8499-78176b9699a4",
+  "state": "done",
+  "ingestion_to_output_seconds": 37.803974800000105,
+  "gpu_layers_offloaded": 37,
+  "validation_failures": 0,
+  "stages": [
+    {
+      "stage": "startup.database",
+      "seconds": 0.03705640000043786,
+      "succeeded": true
+    },
+    {
+      "stage": "startup.embedder",
+      "seconds": 30.11176979999982,
+      "succeeded": true
+    },
+    {
+      "stage": "startup.llm",
+      "seconds": 7.998198399999637,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.003287599999566737,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.012864799999988463,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.004467400000066846,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.009108799999921757,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.4564847000001464,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.3984104999999545,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0008756000006542308,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.15808209999977407,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 1.0471066000000064,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.create",
+      "seconds": 0.008561799999370123,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.jd_embed",
+      "seconds": 0.31968980000056035,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.jd_parse",
+      "seconds": 8.111323800000719,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.retrieve",
+      "seconds": 0.02757320000000618,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.filter",
+      "seconds": 2.9400000130408444e-05,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.retrieve_chunks",
+      "seconds": 0.006697400000120979,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.001322000000072876,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.00829500000054395,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 24.559979499999827,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.00031430000035470584,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.006227300000318792,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.candidates",
+      "seconds": 24.581782699999167,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.rank",
+      "seconds": 0.005075299999589333,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 3.948448400000416,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.report",
+      "seconds": 3.9581074999996417,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.total",
+      "seconds": 36.7433501000005,
+      "succeeded": true
+    },
+    {
+      "stage": "output.read",
+      "seconds": 0.004113400000278489,
+      "succeeded": true
+    }
+  ]
+}

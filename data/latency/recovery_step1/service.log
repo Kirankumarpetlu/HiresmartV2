@@ -1,0 +1,50 @@
+2026-11-19 17:10:23,801 INFO app.services.embed_service CPU embedder loaded in 4.53s
+2026-11-19 17:10:26,032 INFO app.services.llm_service LLM loaded in 2.11s; GPU layers offloaded=37
+2026-11-19 17:10:27,073 INFO app.services.llm_service LLM prompt_cache miss
+2026-11-19 17:10:30,636 INFO app.services.llm_service LLM call prompt_tokens=134 latency=3.56s tokens_per_second=13.75
+2026-11-19 17:10:30,646 INFO app.services.llm_service LLM prompt_eval schema=ParsedJD tokens=131 milliseconds=759.51
+2026-11-19 17:10:30,738 INFO app.timing Pipeline stage=screening.jd_embed latency=0.090889s success=True
+2026-11-19 17:10:30,749 INFO app.timing Pipeline stage=screening.jd_parse latency=3.682999s success=True
+2026-11-19 17:10:30,751 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['parse_jd']
+2026-11-19 17:10:30,793 INFO app.timing Pipeline stage=screening.retrieve latency=0.041310s success=True
+2026-11-19 17:10:30,794 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['retrieve']
+2026-11-19 17:10:30,795 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['fan_out_candidates']
+2026-11-19 17:10:30,831 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000941s success=True
+2026-11-19 17:10:30,833 INFO app.timing Pipeline stage=candidate.prepare latency=0.003445s success=True
+2026-11-19 17:10:30,843 INFO app.services.llm_service LLM prompt_cache hit prefix_tokens=3
+2026-11-19 17:10:43,846 INFO app.services.llm_service LLM call prompt_tokens=536 latency=13.02s tokens_per_second=16.21
+2026-11-19 17:10:43,846 INFO app.services.llm_service LLM prompt_eval schema=RequestedEvaluation tokens=530 milliseconds=2624.79
+2026-11-19 17:10:43,850 INFO app.timing Pipeline stage=candidate.evaluate latency=13.016248s success=True
+2026-11-19 17:10:43,856 INFO app.timing Pipeline stage=candidate.verify latency=0.004029s success=True
+2026-11-19 17:10:43,859 INFO app.screening.graph Candidate saved jd=4575f3e4-f26f-478f-b755-61220eb41ac6 resume=c0a38216-b1a6-47e9-a903-036fee06ebc0 cache_hit=False
+2026-11-19 17:10:43,859 INFO app.timing Pipeline stage=candidate.save latency=0.002961s success=True
+2026-11-19 17:10:43,875 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['candidate']
+2026-11-19 17:10:43,883 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000169s success=True
+2026-11-19 17:10:43,887 INFO app.timing Pipeline stage=candidate.prepare latency=0.004421s success=True
+2026-11-19 17:10:43,896 INFO app.services.llm_service LLM prompt_cache hit prefix_tokens=460
+2026-11-19 17:10:44,236 INFO app.timing Pipeline stage=output.read latency=0.007258s success=True
+2026-11-19 17:11:01,349 INFO app.services.embed_service CPU embedder loaded in 4.33s
+2026-11-19 17:11:03,641 INFO app.services.llm_service LLM loaded in 2.16s; GPU layers offloaded=37
+2026-11-19 17:11:03,682 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['candidate']
+2026-11-19 17:11:03,696 INFO app.services.llm_service LLM prompt_cache miss
+2026-11-19 17:11:15,391 INFO app.services.llm_service LLM call prompt_tokens=536 latency=11.70s tokens_per_second=16.06
+2026-11-19 17:11:15,391 INFO app.services.llm_service LLM prompt_eval schema=RequestedEvaluation tokens=533 milliseconds=2618.98
+2026-11-19 17:11:15,391 INFO app.timing Pipeline stage=candidate.evaluate latency=11.716126s success=True
+2026-11-19 17:11:15,407 INFO app.timing Pipeline stage=candidate.verify latency=0.003880s success=True
+2026-11-19 17:11:15,412 INFO app.screening.graph Candidate saved jd=4575f3e4-f26f-478f-b755-61220eb41ac6 resume=d1846672-11cf-4fc2-8314-a3fb4dd6b6f7 cache_hit=False
+2026-11-19 17:11:15,412 INFO app.timing Pipeline stage=candidate.save latency=0.003330s success=True
+2026-11-19 17:11:15,419 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['candidate']
+2026-11-19 17:11:15,429 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001094s success=True
+2026-11-19 17:11:15,432 INFO app.timing Pipeline stage=candidate.prepare latency=0.003749s success=True
+2026-11-19 17:11:15,443 INFO app.services.llm_service LLM prompt_cache hit prefix_tokens=460
+2026-11-19 17:11:24,678 INFO app.services.llm_service LLM call prompt_tokens=536 latency=9.24s tokens_per_second=20.36
+2026-11-19 17:11:24,678 INFO app.services.llm_service LLM prompt_eval schema=RequestedEvaluation tokens=73 milliseconds=405.53
+2026-11-19 17:11:24,678 INFO app.timing Pipeline stage=candidate.evaluate latency=9.245008s success=True
+2026-11-19 17:11:24,682 INFO app.timing Pipeline stage=candidate.verify latency=0.003389s success=True
+2026-11-19 17:11:24,686 INFO app.screening.graph Candidate saved jd=4575f3e4-f26f-478f-b755-61220eb41ac6 resume=c3908d5f-5da2-4b16-b0b7-c2d9368553ac cache_hit=False
+2026-11-19 17:11:24,686 INFO app.timing Pipeline stage=candidate.save latency=0.003164s success=True
+2026-11-19 17:11:24,694 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['candidate']
+2026-11-19 17:11:24,699 INFO app.timing Pipeline stage=screening.rank latency=0.004769s success=True
+2026-11-19 17:11:24,700 INFO app.screening.graph Screening graph event jd=4575f3e4-f26f-478f-b755-61220eb41ac6 nodes=['rank']
+2026-11-19 17:11:24,708 INFO app.services.llm_service LLM prompt_cache hit prefix_tokens=6
+2026-11-19 17:11:25,359 INFO app.timing Pipeline stage=output.read latency=0.005467s success=True

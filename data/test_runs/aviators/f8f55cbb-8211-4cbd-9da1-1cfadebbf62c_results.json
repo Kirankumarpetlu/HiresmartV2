@@ -1,0 +1,703 @@
+[
+  {
+    "id": "6014a97c-ad08-4d00-9dab-c6039912c368",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "e670dbfe-ace3-45c3-b336-7539a7a104dd",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.6221736371333617,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [],
+        "reasoning": "Challenging projects and high performance metrics.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Highly driven and resourceful",
+        "evidence": [
+          "Built a TypeScript multi-agent orchestrator coordinating 6 LLM agents that automate Shopify store operations for merchants"
+        ],
+        "reasoning": "Resourceful and highly driven project development.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "Strong ability to collaborate",
+        "evidence": [],
+        "reasoning": "Collaborative team leadership and project success.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "",
+      "domain": 3.0,
+      "education": 3.0,
+      "experience": 100
+    },
+    "red_flags": [
+      "Unverified evidence for The ability to take on challenges and address problems head-on",
+      "Unverified evidence for Strong ability to collaborate"
+    ],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.789214",
+    "file_name": "Atharva_Arbat_AI_v3.pdf",
+    "years_exp": 2.33,
+    "strengths": [
+      {
+        "skill": "Highly driven and resourceful",
+        "level": 3,
+        "evidence": [
+          "Built a TypeScript multi-agent orchestrator coordinating 6 LLM agents that automate Shopify store operations for merchants"
+        ]
+      }
+    ],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+      "The ability to take on challenges and address problems head-on",
+      "Strong ability to collaborate"
+    ],
+    "evidence": [
+      {
+        "skill": "Highly driven and resourceful",
+        "quotes": [
+          "Built a TypeScript multi-agent orchestrator coordinating 6 LLM agents that automate Shopify store operations for merchants"
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  {
+    "id": "3f88da92-8d22-4092-b77c-1ac3da188ca5",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "df309ea7-7fab-408d-a9ea-56cac0ee15f6",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.6202811966666649,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [],
+        "reasoning": "Addressed challenges in project development.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "Highly driven and resourceful",
+        "evidence": [],
+        "reasoning": "Driven and resourceful in project implementation.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "Strong ability to collaborate",
+        "evidence": [],
+        "reasoning": "Collaborated on multiple projects.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "Python and Flask Framework experience, hands-on projects, and collaboration skills.",
+      "domain": 3.0,
+      "education": 3.0,
+      "experience": 100
+    },
+    "red_flags": [
+      "Unverified evidence for The ability to take on challenges and address problems head-on",
+      "Unverified evidence for Highly driven and resourceful",
+      "Unverified evidence for Strong ability to collaborate"
+    ],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.795410",
+    "file_name": "Mageshwari M.pdf",
+    "years_exp": null,
+    "strengths": [],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+      "The ability to take on challenges and address problems head-on",
+      "Highly driven and resourceful",
+      "Strong ability to collaborate"
+    ],
+    "evidence": [],
+    "summary": ""
+  },
+  {
+    "id": "fdbcf1dd-ee68-4ace-9475-13544e666d62",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "f5a14d8a-82ce-4563-b52b-efc07e549275",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.6091779751496694,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ],
+        "reasoning": "Challenges addressed through Python development.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Highly driven and resourceful",
+        "evidence": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ],
+        "reasoning": "Resourcefulness shown in Python development.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Strong ability to collaborate",
+        "evidence": [
+          "Collaborated Git commits, participated in code reviews, and documented 8+ REST APIs to improve team development efficiency."
+        ],
+        "reasoning": "Collaboration demonstrated through code commits and reviews.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "Python experience and collaboration skills are well-supported.",
+      "domain": 1.0,
+      "education": 1.0,
+      "experience": 100
+    },
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.799690",
+    "file_name": "Sabrin_S_Resume.pdf",
+    "years_exp": 0.33,
+    "strengths": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "level": 3,
+        "evidence": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "level": 3,
+        "evidence": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ]
+      },
+      {
+        "skill": "Strong ability to collaborate",
+        "level": 3,
+        "evidence": [
+          "Collaborated Git commits, participated in code reviews, and documented 8+ REST APIs to improve team development efficiency."
+        ]
+      }
+    ],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C"
+    ],
+    "evidence": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "quotes": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "quotes": [
+          "Developed Python backend modules using OOP and REST APIs, reducing code duplication by 30% and improving application maintainability."
+        ]
+      },
+      {
+        "skill": "Strong ability to collaborate",
+        "quotes": [
+          "Collaborated Git commits, participated in code reviews, and documented 8+ REST APIs to improve team development efficiency."
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  {
+    "id": "60ebfff2-0a4a-460f-8e6f-070a323b3199",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "792b0170-46f4-4eaf-ab54-05ed556b6f64",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.6046507093029372,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [
+          "Developed secure authentication, payment integration, and responsive user interfaces while following software engineering best practices."
+        ],
+        "reasoning": "Developed secure authentication, payment integration, and responsive user interfaces.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Highly driven and resourceful",
+        "evidence": [
+          "Managed Git version control, deployment pipelines, testing, debugging, and client requirement analysis throughout the software development lifecycle."
+        ],
+        "reasoning": "Managed Git version control, deployment pipelines, testing, debugging, and client requirement analysis.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "Strong ability to collaborate",
+        "evidence": [],
+        "reasoning": "Collaborated with senior developers using Git, code reviews, Agile practices, and CI/CD workflows.",
+        "confidence": 0.5,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "All required skills are supported by evidence and reasoning.",
+      "domain": 3.0,
+      "education": 3.0,
+      "experience": 100
+    },
+    "red_flags": [
+      "Unverified evidence for Strong ability to collaborate"
+    ],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.802721",
+    "file_name": "VishalDaware_Resume.pdf",
+    "years_exp": 1.67,
+    "strengths": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "level": 3,
+        "evidence": [
+          "Developed secure authentication, payment integration, and responsive user interfaces while following software engineering best practices."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "level": 3,
+        "evidence": [
+          "Managed Git version control, deployment pipelines, testing, debugging, and client requirement analysis throughout the software development lifecycle."
+        ]
+      }
+    ],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+      "Strong ability to collaborate"
+    ],
+    "evidence": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "quotes": [
+          "Developed secure authentication, payment integration, and responsive user interfaces while following software engineering best practices."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "quotes": [
+          "Managed Git version control, deployment pipelines, testing, debugging, and client requirement analysis throughout the software development lifecycle."
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  {
+    "id": "a6be8526-6299-4f95-a868-e6cf63586306",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "cb213a94-8f35-4156-a69e-25980bbff35a",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.5951029371612913,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 1,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [
+          "Achieved a 3 star rating on CodeChef and solved over 200+ problems on Codeforces"
+        ],
+        "reasoning": "Demonstrated problem-solving skills through coding competitions.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 1,
+        "skill": "Highly driven and resourceful",
+        "evidence": [
+          "Organized multiple college-level coding contests via the Programming Club"
+        ],
+        "reasoning": "Showed strong motivation and resourcefulness in organizing contests.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Strong ability to collaborate",
+        "evidence": [
+          "Built and deployed mobile applications as part of collaborative cross-functional teams"
+        ],
+        "reasoning": "Collaborated effectively in cross-functional teams.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "All skills are supported by evidence and evidence is recent.",
+      "domain": 3.0,
+      "education": 3.0,
+      "experience": 100
+    },
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.805424",
+    "file_name": "Daiwik_s Saxena Resume.pdf",
+    "years_exp": 3.17,
+    "strengths": [
+      {
+        "skill": "Strong ability to collaborate",
+        "level": 3,
+        "evidence": [
+          "Built and deployed mobile applications as part of collaborative cross-functional teams"
+        ]
+      }
+    ],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+      "The ability to take on challenges and address problems head-on",
+      "Highly driven and resourceful"
+    ],
+    "evidence": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "quotes": [
+          "Achieved a 3 star rating on CodeChef and solved over 200+ problems on Codeforces"
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "quotes": [
+          "Organized multiple college-level coding contests via the Programming Club"
+        ]
+      },
+      {
+        "skill": "Strong ability to collaborate",
+        "quotes": [
+          "Built and deployed mobile applications as part of collaborative cross-functional teams"
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  {
+    "id": "55846db8-33f3-494d-b9ce-acc77d49de40",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "5eb4d019-48a9-4185-adba-ce46a02c031e",
+    "status": "done",
+    "error_message": null,
+    "similarity": 0.5796092340855407,
+    "final_score": null,
+    "rank": null,
+    "skill_report": [
+      {
+        "level": 0,
+        "skill": "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C",
+        "evidence": [],
+        "reasoning": "No supported evaluation was returned.",
+        "confidence": 0.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "The ability to take on challenges and address problems head-on",
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ],
+        "reasoning": "Solved complex problems in AI and data science projects.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Highly driven and resourceful",
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ],
+        "reasoning": "Demonstrated strong drive and resourcefulness in AI projects.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 3,
+        "skill": "Strong ability to collaborate",
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ],
+        "reasoning": "Collaborated on multiple AI projects with diverse teams.",
+        "confidence": 1.0,
+        "years_used": null,
+        "is_must_have": true,
+        "last_used_year": null
+      }
+    ],
+    "fit_scores": {
+      "notes": "All skills are supported by evidence from the provided text.",
+      "domain": 3.0,
+      "education": 3.0,
+      "experience": 100
+    },
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.808304",
+    "file_name": "Jayanth_Resume_mondee.pdf",
+    "years_exp": 0.67,
+    "strengths": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "level": 3,
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "level": 3,
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      },
+      {
+        "skill": "Strong ability to collaborate",
+        "level": 3,
+        "evidence": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      }
+    ],
+    "gaps": [
+      "Any of: Proficiency in at least one programming language or technology including, but not limited, to Java, C/C++, C#, .NET, python, Javascript, HTML, CSS and Objective-C"
+    ],
+    "evidence": [
+      {
+        "skill": "The ability to take on challenges and address problems head-on",
+        "quotes": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      },
+      {
+        "skill": "Highly driven and resourceful",
+        "quotes": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      },
+      {
+        "skill": "Strong ability to collaborate",
+        "quotes": [
+          "Developed and deployed cutting-edge Computer Vision solutions for aviation-related applications, leveraging state-of-the-art foundation models such as SAM, DINOv3, and GeCo2 for precise detection and semantic segmentation."
+        ]
+      }
+    ],
+    "summary": ""
+  },
+  {
+    "id": "ccee842c-fe81-4790-8e5d-61052a7d541e",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "73eb17d2-94f7-470a-ad16-2ef566a15b7d",
+    "status": "pending",
+    "error_message": null,
+    "similarity": 0.5790102816706065,
+    "final_score": null,
+    "rank": null,
+    "skill_report": null,
+    "fit_scores": null,
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.811376",
+    "file_name": "AnujYadav-3AugIIITM.pdf",
+    "years_exp": 0.83,
+    "strengths": [],
+    "gaps": [],
+    "evidence": [],
+    "summary": ""
+  },
+  {
+    "id": "443d668e-947f-4545-98bf-4a0dd0196821",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "47454ad6-d7ba-4b64-8978-ce7d27d2b228",
+    "status": "pending",
+    "error_message": null,
+    "similarity": 0.5726975920639618,
+    "final_score": null,
+    "rank": null,
+    "skill_report": null,
+    "fit_scores": null,
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.813877",
+    "file_name": "Nikshith.pdf",
+    "years_exp": 0.5,
+    "strengths": [],
+    "gaps": [],
+    "evidence": [],
+    "summary": ""
+  },
+  {
+    "id": "5f576cd3-ac49-4dd2-8b78-881a50e01734",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "24b49e18-2a94-45b3-87e0-889996d6b01a",
+    "status": "pending",
+    "error_message": null,
+    "similarity": 0.5715035516877954,
+    "final_score": null,
+    "rank": null,
+    "skill_report": null,
+    "fit_scores": null,
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.817537",
+    "file_name": "adarsh_res6-1.pdf",
+    "years_exp": 0.25,
+    "strengths": [],
+    "gaps": [],
+    "evidence": [],
+    "summary": ""
+  },
+  {
+    "id": "78e85760-8b66-4ac1-b0c8-14886f8ba82e",
+    "jd_id": "f8f55cbb-8211-4cbd-9da1-1cfadebbf62c",
+    "resume_id": "20c2a20e-3a83-48ae-a9e8-e17a3757e3f3",
+    "status": "pending",
+    "error_message": null,
+    "similarity": 0.5713127881328318,
+    "final_score": null,
+    "rank": null,
+    "skill_report": null,
+    "fit_scores": null,
+    "red_flags": [],
+    "explanation": null,
+    "recommendation": null,
+    "created_at": "2026-11-12T12:16:26.821747",
+    "file_name": "T Mohan Lakshmi Ganesh_Resume.pdf",
+    "years_exp": null,
+    "strengths": [],
+    "gaps": [],
+    "evidence": [],
+    "summary": ""
+  }
+]

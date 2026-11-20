@@ -1,0 +1,88 @@
+{
+  "indexed_resumes": 1,
+  "retrieved": 1,
+  "scored": 1,
+  "authenticated": false,
+  "quota_start": {
+    "core": {
+      "limit": 60,
+      "remaining": 57,
+      "reset": 1795161002
+    },
+    "graphql": {
+      "limit": 0,
+      "remaining": 0,
+      "reset": 1795164078
+    },
+    "search": {
+      "limit": 10,
+      "remaining": 10,
+      "reset": 1795160538
+    }
+  },
+  "quota_end": {
+    "core": {
+      "limit": 60,
+      "remaining": 57,
+      "reset": 1795161002
+    },
+    "graphql": {
+      "limit": 0,
+      "remaining": 0,
+      "reset": 1795164078
+    },
+    "search": {
+      "limit": 10,
+      "remaining": 10,
+      "reset": 1795160538
+    }
+  },
+  "status_counts": {
+    "ok": 1
+  },
+  "network_calls": 0,
+  "cache_hits": 6,
+  "secondary_limits": 0,
+  "results": [
+    {
+      "resume_id": "b729f8be-eac1-4b7c-aa00-01297ae4c15b",
+      "status": "ok",
+      "github_score": 58,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 41.0,
+        "code_quality": 50.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1808,
+        "public_repos": 56,
+        "original_repos": 44,
+        "followers": 12,
+        "languages": {
+          "Go": 75214,
+          "TeX": 110470,
+          "Lean": 19395,
+          "Shell": 3171,
+          "Python": 20728,
+          "BibTeX Style": 30065
+        },
+        "sampled_repos": 1,
+        "authored_repos": 1,
+        "recent_commits": 9,
+        "active_days": 4,
+        "days_since_push": 73
+      },
+      "summary": "Checked 1 public repositories and verified 1 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 1,
+      "repos_total": 1,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 0,
+      "cache_hits": 6,
+      "secondary_limits": 0
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "becbfb4a-0489-42d6-8022-e8d3da52e7b7": {
+    "initial_error": "UntranslatableCharacter",
+    "diagnostic": [
+      "agenths-github-retry-6bdd3378d3b040e494bd7b69b584fe81.py:run",
+      "github_agent.py:collect",
+      "github_client.py:__exit__",
+      "db.py:execute",
+      "connection.py:execute"
+    ],
+    "temporary_normalization": "Removed NUL characters from public evidence before writing the cache.",
+    "result": {
+      "status": "ok",
+      "github_score": 56,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 42.96,
+        "code_quality": 35.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1145,
+        "public_repos": 20,
+        "original_repos": 15,
+        "followers": 3,
+        "languages": {
+          "Python": 167172,
+          "Dockerfile": 659,
+          "Batchfile": 962,
+          "Shell": 910,
+          "Jupyter Notebook": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 7,
+        "active_days": 5,
+        "days_since_push": 22
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 2 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    }
+  },
+  "d77d86c9-c42d-4ad8-9475-0dd10f19c070": {
+    "initial_error": "HTTPStatusError",
+    "retry_error": "HTTPStatusError",
+    "http_status": 301,
+    "endpoint_category": "repository",
+    "result": {
+      "status": "ok",
+      "github_score": 54,
+      "subscores": {
+        "project_match": 60.0,
+        "activity": 95.23,
+        "code_quality": 52.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 838,
+        "public_repos": 20,
+        "original_repos": 19,
+        "followers": 3,
+        "languages": {
+          "Jupyter Notebook": 484165,
+          "Python": 72186,
+          "CSS": 13922,
+          "HTML": 3098,
+          "JavaScript": 17214,
+          "Dockerfile": 401
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 34,
+        "active_days": 13,
+        "days_since_push": 87
+      },
+      "summary": "Checked 5 public repositories and verified 3 of 5 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 24,
+      "cache_hits": 2,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    "temporary_redirects_followed": 5
+  }
+}

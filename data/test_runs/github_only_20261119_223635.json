@@ -1,0 +1,159 @@
+{
+  "jd_file": "FY'26 NCG Full Time SWE JD_Visa.pdf",
+  "requested_resume_count": 25,
+  "cutoff": "github_match",
+  "upload_status": {
+    "duplicate": 25
+  },
+  "upload_errors": [],
+  "shortlist_count": 25,
+  "results": [
+    {
+      "file_name": "Atharva_Arbat_AI_v3.pdf",
+      "resume_id": "b729f8be-eac1-4b7c-aa00-01297ae4c15b",
+      "status": "ok",
+      "github_score": 59,
+      "project_matches": [
+        {
+          "resume_project": "AgentKernel",
+          "repo": "https://github.com/atharvaarbat/agent-kernel",
+          "match": "verified",
+          "reason": "The resume links directly to this public repository.",
+          "evidence_quote": null,
+          "verified": true,
+          "authored": true
+        }
+      ],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "Mageshwari M.pdf",
+      "resume_id": "ccbc0a06-d1e5-474e-b9bf-5a4b3c115b65",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "Sabrin_S_Resume.pdf",
+      "resume_id": "4985f17b-f83b-4c1c-a429-5a153ab14f4d",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "VishalDaware_Resume.pdf",
+      "resume_id": "a2ae6242-0b4e-47e7-86ff-66dd809b74ab",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "Daiwik_s Saxena Resume.pdf",
+      "resume_id": "becbfb4a-0489-42d6-8022-e8d3da52e7b7",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "AnujYadav-3AugIIITM.pdf",
+      "resume_id": "61234775-e4c5-4a4c-a897-af48d6e22b03",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "Jayanth_Resume_mondee.pdf",
+      "resume_id": "436c5b8c-b840-4334-be1f-735546e2159b",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "T Mohan Lakshmi Ganesh_Resume.pdf",
+      "resume_id": "2d228e27-6ece-4f91-bdec-d5745d7eb95e",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "Abhinav_Kumar_Resume.pdf",
+      "resume_id": "d14bcc11-ab0c-41d3-a35b-3bf58e2bc316",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    },
+    {
+      "file_name": "adarsh_res6-1.pdf",
+      "resume_id": "d77d86c9-c42d-4ad8-9475-0dd10f19c070",
+      "status": "rate_limited",
+      "github_score": null,
+      "project_matches": [],
+      "nodes_run": [
+        "route",
+        "github_agent",
+        "evaluation_branch",
+        "github_match"
+      ]
+    }
+  ],
+  "notification_rows": null,
+  "completed": false,
+  "jd_title": "New Grad - Software Engineer",
+  "status_counts": {
+    "ok": 1,
+    "rate_limited": 9
+  }
+}

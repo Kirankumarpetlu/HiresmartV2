@@ -1,0 +1,9 @@
+INFO:     Started server process [14780]
+INFO:     Waiting for application startup.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:   8%|7         | 15/199 [00:00<00:01, 131.91it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1213.59it/s]
+D:\agentHS\app\services\embed_service.py:24: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  if model.get_sentence_embedding_dimension() != settings.embed_dim:
+D:\agentHS\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py:206: UserWarning: The `local_dir_use_symlinks` argument is deprecated and ignored in `hf_hub_download`. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentHS · Code and database flow</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: CanvasText;
+    --surface: Canvas;
+    --line: color-mix(in srgb, var(--ink) 25%, var(--surface));
+    --muted: color-mix(in srgb, var(--ink) 77%, var(--surface));
+    --work: light-dark(#155a9e, #8cc6ff);
+    --db: light-dark(#186747, #83e0b3);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0 auto; padding: 24px clamp(16px, 4vw, 50px) 64px; max-width: 1280px;
+    background: var(--surface); color: var(--ink); font: 15px/1.5 system-ui, sans-serif;
+    overflow-wrap: anywhere;
+  }
+  h1, h2, h3, p { margin: 0; }
+  h1 { font-size: clamp(25px, 4vw, 38px); line-height: 1.2; }
+  h2 { font-size: 22px; margin-bottom: 6px; }
+  h3 { font-size: 15px; }
+  p, .detail { color: var(--muted); }
+  a { color: var(--work); }
+  nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 14px 0; }
+  section { margin-top: 38px; }
+  .diagram { margin-top: 16px; }
+  .step { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 26px; }
+  .lane-head { color: var(--muted); font-weight: 600; margin-bottom: 7px; }
+  .node {
+    background: var(--surface); border: 1px solid var(--line); border-inline-start: 3px solid var(--work);
+    border-radius: 7px; padding: 10px 13px; min-width: 0;
+  }
+  .files { color: var(--work); margin: 4px 0; display: flex; flex-wrap: wrap; gap: 2px 10px; }
+  code { font: .88em ui-monospace, monospace; }
+  .data {
+    align-self: center; position: relative; padding: 8px 11px;
+    border: 1px solid color-mix(in srgb, var(--db) 55%, var(--line)); border-radius: 7px;
+    background: color-mix(in srgb, var(--db) 6%, var(--surface));
+  }
+  .data::before { content: ""; position: absolute; width: 26px; right: 100%; top: 50%; border-top: 1px solid var(--db); }
+  .db-row { display: block; font-size: 13px; padding: 3px 0; }
+  .db-row + .db-row { border-top: 1px solid var(--line); }
+  .db-row a, .operation { color: var(--db); }
+  .operation { font-weight: 650; margin-right: 5px; }
+  .next { height: 24px; position: relative; width: calc((100% - 26px)*.535); }
+  .next::before {
+    content: ""; position: absolute; top: 0; bottom: 5px; left: 50%; border-left: 1px solid var(--work);
+  }
+  .next::after {
+    content: ""; position: absolute; bottom: 5px; left: 50%; width: 6px; height: 6px;
+    border: solid var(--work); border-width: 0 1px 1px 0; transform: translateX(-3px) rotate(45deg);
+  }
+  .branches { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 14px; margin-block: 6px; }
+  .branch { border: 1px solid var(--line); border-radius: 9px; padding: 10px; min-width: 0; }
+  .branch > h3 { margin-bottom: 8px; color: var(--work); }
+  .parallel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; align-items: start; }
+  .parallel .step, .branch:first-child .step { display: block; }
+  .parallel .data, .branch:first-child .data { margin: 5px 0 0 7px; }
+  .parallel .data::before, .branch:first-child .data::before { display: none; }
+  .parallel .next, .branch:first-child .next { width: 100%; }
+  .join { margin: 9px 0 0; }
+  .outcomes { margin-top: 7px; }
+  #ops-diagram .step + .step { margin-top: 9px; }
+  .note { margin: 9px 0; color: var(--muted); }
+  .table-graph { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+  .table-graph .node { border-inline-start-color: var(--db); scroll-margin-top: 16px; }
+  .table-graph h3 { color: var(--db); }
+  .relations { display: grid; gap: 4px; margin: 12px 0; }
+  .relation { border-inline-start: 2px solid var(--db); padding: 5px 10px; }
+  .relation a { color: var(--db); }
+  .subhead { margin-top: 20px; }
+  @media (max-width: 740px) {
+    .step, .branches, .parallel { grid-template-columns: 1fr; gap: 5px; }
+    .next { width: 100%; }
+    .data { margin-left: 12px; }
+    .data::before { display: none; }
+    .lane-head { display: none; }
+  }
+  @media (max-width: 520px) { .table-graph { grid-template-columns: 1fr; } }
+</style>
+<body>
+<header>
+  <h1>AgentHS code and database flow</h1>
+  <nav aria-label="Diagrams">
+    <a href="#upload">Resume upload</a>
+    <a href="#screening">Screening and agents</a>
+    <a href="#email">Approval and delivery</a>
+    <a href="#database">PostgreSQL relationships</a>
+  </nav>
+  <p>Follow the downward arrows for execution order. Green panels show the PostgreSQL reads and writes performed at each step.</p>
+</header>
+<main>
+  <section id="upload"><h2>Resume upload and indexing</h2><div class="diagram" id="upload-diagram"></div></section>
+  <section id="screening"><h2>Screening and agent execution</h2><div class="diagram" id="screening-diagram"></div></section>
+  <section id="email"><h2>Candidate selection, approval, and delivery</h2><div class="diagram" id="email-diagram"></div></section>
+  <section id="database">
+    <h2>PostgreSQL relationships and storage</h2>
+    <p><code>app/api.py</code> initializes <code>db/init.sql</code> through the <code>app/db.py</code> psycopg pool. <code>docker-compose.yml</code> provisions PostgreSQL with pgvector and optional Mailpit.</p>
+    <p><code>app/config.py</code> loads settings, <code>app/models.py</code> validates requests and structured model output, and <code>app/timing.py</code> records stage timings. <code>scripts/</code> maintains schemas and runs operational checks. <code>tests/</code> verifies the API, agents, storage, and notification behavior.</p>
+    <div class="relations" id="relations" aria-label="Foreign-key connections"></div>
+    <div class="table-graph" id="core-tables"></div>
+    <h3 class="subhead">Caches written by screening and ingestion</h3>
+    <div class="table-graph" id="cache-tables"></div>
+    <h3 class="subhead">LangGraph state and restart recovery</h3>
+    <p><code>app/screening/graph.py</code> configures <code>PostgresSaver</code>. The checkpoint thread ID equals the job ID. Once approval is recorded, the runner resumes the interrupted graph.</p>
+    <div class="table-graph" id="checkpoint-tables"></div>
+    <h3 class="subhead">Other API connections</h3>
+    <div class="diagram" id="ops-diagram"></div>
+  </section>
+</main>
+<script>
+  const $ = id => document.getElementById(id);
+  function element(tag, text, className) {
+    const node = document.createElement(tag);
+    if (text) node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  }
+  function tableLink(name) {
+    const link = element("a");
+    link.href = "#table-" + name;
+    link.append(element("code", name));
+    return link;
+  }
+  function box(title, files, detail) {
+    const node = element("article", "", "node");
+    node.append(element("h3", title));
+    if (files.length) {
+      const list = element("div", "", "files");
+      for (const file of files) list.append(element("code", file));
+      node.append(list);
+    }
+    node.append(element("p", detail));
+    return node;
+  }
+  function addSteps(parent, steps, laneHeading = false) {
+    if (laneHeading) {
+      const lanes = element("div", "", "step lane-head");
+      lanes.append(element("span", "Execution"), element("span", "PostgreSQL"));
+      parent.append(lanes);
+    }
+    steps.forEach(([title, files, detail, readsWrites = []], index) => {
+      if (index) parent.append(element("div", "", "next"));
+      const row = element("div", "", "step");
+      row.append(box(title, files, detail));
+      if (readsWrites.length) {
+        const db = element("aside", "", "data");
+        for (const [operation, table, detail] of readsWrites) {
+          const access = element("div", "", "db-row");
+          access.append(element("span", operation, "operation"), tableLink(table), document.createTextNode(" · " + detail));
+          db.append(access);
+        }
+        row.append(db);
+      }
+      parent.append(row);
+    });
+  }
+  const upload = [
+    ["Upload PDFs or DOCX files", ["app/ui.py", "app/api.py"], "POST /resumes passes each file to process_upload()."],
+    ["Deduplicate by content hash", ["app/ingest/pipeline.py"], "A PostgreSQL advisory lock serializes uploads of the same file.", [
+      ["READ", "resumes", "Look for the existing hash-derived file path"]
+    ]],
+    ["Parse, clean, and extract metadata", ["app/ingest/parse.py", "app/ingest/preprocess.py", "app/ingest/metadata.py"], "Extract text, skills, years of experience, GitHub links, and private candidate contact fields."],
+    ["Split and embed the evidence", ["app/ingest/chunk.py", "app/services/embed_service.py", "app/cache.py"], "Encode sections using the shared CPU BGE model. Only uncached chunk texts need encoding.", [
+      ["READ / WRITE", "embedding_cache", "Reuse or save vectors keyed by text hash and model"]
+    ]],
+    ["Persist the source and indexed resume", ["app/ingest/pipeline.py", "app/db.py"], "Write the original under data/uploads/. Store metadata and chunks in one PostgreSQL transaction.", [
+      ["INSERT", "resumes", "File path, cleaned text, metadata, contact, and GitHub fields"],
+      ["INSERT", "resume_chunks", "Sections, content, and 768-dimensional vectors"]
+    ]]
+  ];
+  addSteps($("upload-diagram"), upload, true);
+
+  const screening = $("screening-diagram");
+  addSteps(screening, [
+    ["Submit a job description", ["app/ui.py", "app/api.py", "app/screening/graph.py", "app/screening/state.py"], "POST /screenings creates the JD and queues a LangGraph run. The API returns jd_id immediately.", [
+      ["INSERT", "job_descriptions", "Raw job description"],
+      ["WRITE", "checkpoints", "Initial state, using jd_id as thread_id"]
+    ]],
+    ["parse_jd", ["app/screening/jd_parser.py", "app/cache.py", "app/services/llm_service.py", "app/services/embed_service.py"], "On a cache miss, the local model extracts requirements and the CPU model creates query vectors.", [
+      ["READ / WRITE", "jd_parse_cache", "Parsed requirements and query vectors"],
+      ["UPDATE", "job_descriptions", "Parsed fields and mean JD vector"]
+    ]],
+    ["retrieve", ["app/screening/retrieval.py", "app/screening/graph.py"], "pgvector cosine search shortlists resumes and fetches each candidate’s best evidence chunks.", [
+      ["READ", "resumes", "Resume metadata and eligibility filters"],
+      ["READ", "resume_chunks", "HNSW search over chunk vectors and evidence text"],
+      ["INSERT", "screening_results", "Pending row and similarity for each shortlisted resume"]
+    ]],
+    ["fan_out_candidates → candidate", ["app/screening/graph.py"], "LangGraph Send maps the candidate graph over the shortlist. An empty shortlist goes directly to rank.", [
+      ["READ", "screening_results", "Reuse already finished candidates on resume"],
+      ["WRITE", "checkpoints", "Record progress so unfinished work can resume"]
+    ]],
+    ["route", ["app/screening/graph.py", "app/screening/stage1_filter.py"], "Choose the filtered-out route or start both evidence branches for this candidate."]
+  ], true);
+  const branches = element("div", "", "branches");
+  const filtered = element("div", "", "branch");
+  filtered.append(element("h3", "↙ Filtered out"));
+  addSteps(filtered, [
+    ["filtered_out", ["app/screening/graph.py"], "Goes directly to save with status filtered_out."]
+  ]);
+  const passed = element("div", "", "branch");
+  passed.append(element("h3", "↓ Candidate passes · these two branches run in parallel"));
+  const parallel = element("div", "", "parallel");
+  const evaluation = element("div");
+  const github = element("div");
+  addSteps(evaluation, [
+    ["anonymize", ["app/screening/anonymize.py", "app/cache.py"], "Remove contact details from the evidence copy. A cache hit supplies verified evaluation directly to the join.", [
+      ["READ", "evaluation_cache", "Previously verified evaluation"]
+    ]],
+    ["evaluator · cache miss", ["app/screening/evaluator.py", "app/services/llm_service.py"], "The local LLM judges proficiency and fit from anonymized evidence."]
+  ]);
+  addSteps(github, [
+    ["github_agent", ["app/screening/github_agent.py", "app/integrations/github_client.py"], "Collect public profile and repository evidence from GitHub when available.", [
+      ["READ", "resume_chunks", "Resume project claims"],
+      ["READ / WRITE", "github_profiles", "Cached public responses and ETags"]
+    ]]
+  ]);
+  parallel.append(evaluation, github);
+  passed.append(parallel);
+  const join = element("div", "", "join");
+  join.append(element("p", "↘ Both branches join here"));
+  addSteps(join, [
+    ["github_match → verifier", ["app/screening/github_agent.py", "app/screening/verifier.py"], "Match project evidence if available, then verify skill claims. Cached verified evaluations skip repeated verification.", [
+      ["READ / WRITE", "embedding_cache", "Vectors for ambiguous project matching when needed"],
+      ["READ / WRITE", "evaluation_cache", "Cached GitHub judgments and newly verified skill evaluations"]
+    ]]
+  ]);
+  passed.append(join);
+  branches.append(filtered, passed);
+  screening.append(branches, element("p", "↘ Both routes lead to save. A candidate exception is recorded as an error and the run continues.", "note"));
+  addSteps(screening, [
+    ["save", ["app/screening/graph.py"], "Persist candidate status and the available verification results.", [
+      ["UPDATE", "screening_results", "Status, skill report, fit, red flags, and GitHub result"]
+    ]],
+    ["rank", ["app/screening/ranking.py"], "Calculate final scores from verified proficiency, fit, and available GitHub scores.", [
+      ["READ", "resumes", "Years of experience for tie-breaking"],
+      ["READ / UPDATE", "screening_results", "Read completed evaluations and write score, rank, and recommendation"]
+    ]],
+    ["report", ["app/screening/report.py", "app/cache.py", "app/services/llm_service.py"], "Write a brief explanation from stored evidence before selecting candidates for email.", [
+      ["READ / UPDATE", "screening_results", "Read completed rows lacking explanations and save the summary"],
+      ["READ / WRITE", "report_cache", "Reuse or save a generated summary"]
+    ]]
+  ]);
+
+  addSteps($("email-diagram"), [
+    ["select_for_email", ["app/screening/graph.py", "app/screening/notify_policy.py"], "Apply Python selection rules to completed evaluations. The recruiter can adjust the proposed set.", [
+      ["READ", "screening_results", "Rank, score, recommendation, must-haves, and GitHub score"]
+    ]],
+    ["draft_emails", ["app/notify/notifications.py", "app/notify/templates.py", "app/notify/templates/candidate.txt", "app/notify/templates/candidate.html"], "Render plain-text and HTML drafts and record the decision basis. Missing email produces no_contact.", [
+      ["READ", "resumes", "Private candidate name and email"],
+      ["READ / INSERT / UPDATE", "notifications", "Reuse drafts or store the message, address, status, and decision basis"]
+    ]],
+    ["approval_gate", ["app/screening/graph.py", "app/api.py", "app/ui.py", "app/notify/notifications.py"], "The default gate interrupts. POST /screenings/{id}/notifications/approve records the review and resumes the run. Auto-send can bypass interview review when explicitly enabled.", [
+      ["READ / UPDATE", "job_descriptions", "Persist email_reviewed_at with the same commit as notification decisions"],
+      ["READ / UPDATE", "notifications", "Record approved and skipped decisions"],
+      ["READ / WRITE", "checkpoints", "Persist the interrupt and resume from it after review"]
+    ]],
+    ["send_emails", ["app/screening/graph.py", "app/notify/notifications.py", "app/notify/mailer.py"], "Dry-run marks approved drafts skipped. Live delivery claims an approved row as sending before SMTP, then records the outcome. The graph finishes as done.", [
+      ["READ / UPDATE", "notifications", "Delivery status, attempts, sent time, or failure"],
+      ["WRITE", "checkpoints", "Persist completed run state"]
+    ]]
+  ], true);
+
+  const deliveryOutcomes = element("div", "", "parallel outcomes");
+  deliveryOutcomes.append(
+    box("↙ Dry run · default", ["app/notify/notifications.py"], "Approved → skipped. The audit entry records dry_run."),
+    box("↘ Live delivery", ["app/notify/mailer.py", "app/notify/notifications.py"], "Approved → sending → SMTP. Record sent on acceptance or failed on a known failure. An unknown outcome stays sending to prevent duplicate delivery.")
+  );
+  $("email-diagram").append(deliveryOutcomes);
+
+  const relations = [
+    ["resumes", ["resume_chunks", "screening_results", "notifications", "evaluation_cache"], "resume_id → resumes.id"],
+    ["job_descriptions", ["screening_results", "notifications"], "jd_id → job_descriptions.id"]
+  ];
+  $("relations").append(element("p", "Foreign keys from child rows to their parent use ON DELETE CASCADE."));
+  for (const [parent, children, key] of relations) {
+    const relation = element("div", "", "relation");
+    relation.append(tableLink(parent), document.createTextNode(" 1 → many "));
+    children.forEach((child, i) => {
+      if (i) relation.append(document.createTextNode(" · "));
+      relation.append(tableLink(child));
+    });
+    relation.append(document.createTextNode("  (" + key + ")"));
+    $("relations").append(relation);
+  }
+  const groups = {
+    "core-tables": [
+      ["resumes", "PK id. Original file path, cleaned text, skills, GitHub links, and private contact fields."],
+      ["resume_chunks", "PK id and FK resume_id. Evidence text and embedding VECTOR(768), searched by the HNSW cosine index."],
+      ["job_descriptions", "PK id. Raw JD, parsed requirements, mean vector, and email_reviewed_at."],
+      ["screening_results", "PK id. Unique (jd_id, resume_id). Status, skill and fit results, GitHub evidence, scoring, and report."],
+      ["notifications", "PK id. Unique (jd_id, resume_id, email_type). Private address and drafts, review decision, status, and delivery audit."]
+    ],
+    "cache-tables": [
+      ["jd_parse_cache", "app/cache.py · Normalized JD text hash, model, and prompt version → parsed fields and query vectors."],
+      ["embedding_cache", "app/cache.py · Text hash and model → reusable vector."],
+      ["evaluation_cache", "app/cache.py · Resume, content and requirement hashes, model, and prompt version → verified evaluation or GitHub match judgment."],
+      ["report_cache", "app/cache.py · Verified results hash, model, and prompt version → summary."],
+      ["github_profiles", "app/integrations/github_client.py · Public GitHub username → endpoint payloads, timestamps, and ETags."]
+    ],
+    "checkpoint-tables": [
+      ["checkpoints", "Stores graph snapshots keyed by thread, namespace, and checkpoint ID."],
+      ["checkpoint_blobs", "Stores versioned channel state for graph snapshots."],
+      ["checkpoint_writes", "Stores pending task writes used for recovery."],
+      ["checkpoint_migrations", "Tracks the checkpoint schema version."]
+    ]
+  };
+  for (const [group, tables] of Object.entries(groups)) {
+    for (const [name, detail] of tables) {
+      const card = box(name, [], detail);
+      card.id = "table-" + name;
+      $(group).append(card);
+    }
+  }
+
+  const ops = [
+    ["View status, ranked results, or drafts", ["app/ui.py", "app/api.py", "app/screening/graph.py", "app/notify/notifications.py"], "The API builds progress from graph state and result counts. The UI receives masked contact and preview data.", [
+      ["READ", "job_descriptions", "Validate screening ID and check review state"],
+      ["READ", "checkpoints", "Current graph state"],
+      ["READ", "screening_results", "Counts and ranked results"],
+      ["READ", "resumes", "Resume metadata used in lists and results"],
+      ["READ", "notifications", "Draft previews and delivery status"]
+    ]],
+    ["Re-rank stored evidence", ["app/api.py", "app/screening/ranking.py"], "The rerank endpoint recalculates scores directly from stored evaluations.", [
+      ["READ", "resumes", "Years of experience"],
+      ["READ / UPDATE", "screening_results", "Recompute score, rank, and recommendation"],
+      ["READ / UPDATE", "checkpoints", "Read run state and save weights outside the approval pause"]
+    ]],
+    ["Fix contact, skip a draft, or retry a failed email", ["app/api.py", "app/notify/notifications.py"], "Contact changes update eligible drafts. Skip and retry apply status transitions to the requested candidates.", [
+      ["UPDATE", "resumes", "Contact email when corrected"],
+      ["READ", "job_descriptions", "Check the screening and review state"],
+      ["READ / UPDATE", "notifications", "Update the address, skip the draft, or queue an eligible failure for retry"]
+    ]],
+    ["Delete a resume and its data", ["app/api.py", "app/cache.py", "db/init.sql"], "Delete the resume through the API. PostgreSQL removes FK-dependent rows, and the API removes the original file under data/uploads/.", [
+      ["READ", "resume_chunks", "Find cache keys derived from the removed evidence"],
+      ["DELETE", "embedding_cache", "Remove the resume’s chunk text cache entries"],
+      ["DELETE", "resumes", "Cascade to chunks, results, notifications, and evaluation cache"]
+    ]]
+  ];
+  for (const step of ops) addSteps($("ops-diagram"), [step]);
+</script>
+</body>
+</html>

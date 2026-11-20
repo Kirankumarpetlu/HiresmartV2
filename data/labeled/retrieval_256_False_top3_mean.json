@@ -1,0 +1,37 @@
+{
+  "human_reviewed": false,
+  "chunk_target": 256,
+  "query_prefix": false,
+  "aggregation": "top3_mean",
+  "resumes": {
+    "candidate_01.docx": "d1e92888-d76d-4999-90bc-13fa765f4c56",
+    "candidate_02.docx": "03d27bff-3bc2-4aea-b5e6-0276f9a7aaff",
+    "candidate_03.docx": "8113c830-12d5-4b32-94c0-2a5d24dd4c31",
+    "candidate_04.docx": "24dd9388-a4d6-4aa8-a7ea-1736a1151fd8",
+    "candidate_05.docx": "820acfcc-53f8-472e-a129-13abe7b0c305",
+    "candidate_06.docx": "17646d3b-9d0a-4ce3-b132-630dc1c13f81",
+    "candidate_07.docx": "a86c3661-c198-4529-8472-967c8ec9991f",
+    "candidate_08.docx": "45793153-06e3-4c27-9e37-ad1c10f107c6",
+    "candidate_09.docx": "e9e71cc2-53eb-4b7b-83fd-622633ac3ff2",
+    "candidate_10.docx": "899e555b-17a3-43c9-b72c-3f4a9b3a5d7f",
+    "candidate_11.docx": "d5684acc-1ebe-4c7c-b5e0-6f8ff513ed7d",
+    "candidate_12.docx": "2795256c-f0e9-449a-9bed-75e5e0ba12bb"
+  },
+  "jobs": [
+    {
+      "job": "Backend engineer",
+      "recall@10": 1.0,
+      "recall@25": 1.0
+    },
+    {
+      "job": "Data engineer",
+      "recall@10": 1.0,
+      "recall@25": 1.0
+    },
+    {
+      "job": "Frontend engineer",
+      "recall@10": 1.0,
+      "recall@25": 1.0
+    }
+  ]
+}

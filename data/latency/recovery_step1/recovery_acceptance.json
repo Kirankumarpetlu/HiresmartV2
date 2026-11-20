@@ -1,0 +1,51 @@
+{
+  "jd_id": "4575f3e4-f26f-478f-b755-61220eb41ac6",
+  "finished": {
+    "c0a38216-b1a6-47e9-a903-036fee06ebc0": [
+      {
+        "level": 3,
+        "skill": "Python",
+        "evidence": [
+          "Built Python APIs and SQL reporting systems for production service 2."
+        ],
+        "reasoning": "Python and SQL experience in production projects.",
+        "confidence": 1.0,
+        "years_used": 4.0,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 2,
+        "skill": "SQL",
+        "evidence": [
+          "Designed PostgreSQL data pipelines and worked with a team of four engineers."
+        ],
+        "reasoning": "PostgreSQL experience in a team setting.",
+        "confidence": 1.0,
+        "years_used": 4.0,
+        "is_must_have": true,
+        "last_used_year": null
+      },
+      {
+        "level": 0,
+        "skill": "PostgreSQL",
+        "evidence": [],
+        "reasoning": "No explicit mention of PostgreSQL experience.",
+        "confidence": 0.0,
+        "years_used": 0.0,
+        "is_must_have": false,
+        "last_used_year": null
+      }
+    ]
+  },
+  "log_offset": 2793,
+  "passed": true,
+  "status": {
+    "total": 3,
+    "done": 3,
+    "errors": 0,
+    "filtered_out": 0,
+    "state": "done",
+    "error_message": null
+  }
+}

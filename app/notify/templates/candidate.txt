@@ -1,0 +1,12 @@
+Hi {{ first_name }},
+
+Thank you for applying for {{ job_title }} with {{ company }}.
+{% if selected %}
+You have been selected for the further round. {{ next_step }}
+{% else %}
+We have decided to move forward with other applications.
+{% endif %}
+Best regards,
+{{ recruiter }}
+{% if recruiter_email %}{{ recruiter_email }}
+{% endif %}

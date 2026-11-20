@@ -1,0 +1,347 @@
+INFO:app.timing:Pipeline stage=startup.database latency=0.049303s success=True
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+INFO:sentence_transformers.base.model:Loading SentenceTransformer model from BAAI/bge-base-en-v1.5.
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/config_sentence_transformers.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22dcb0c0d97d09b930d13600b1a773ddb27e441aab%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/README.md?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2FREADME.md=&etag=%2258b129f71f56062384cdc8e704480a73ed38d03f%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/modules.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/sentence_bert_config.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%22ea85692bff64b0d1917833c31ddbca8ab10f5455%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/BAAI/bge-base-en-v1.5/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-base-en-v1.5/a5beb1e3e68b9ab74eb54cfd186867f64f240e1a/1_Pooling%2Fconfig.json?%2FBAAI%2Fbge-base-en-v1.5%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22da5bfd57e34ca45582e4bdbaa3e6deb9efffa08d%22 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-base-en-v1.5 "HTTP/1.1 200 OK"
+INFO:app.services.embed_service:CPU embedder loaded in 4.22s
+INFO:app.timing:Pipeline stage=startup.embedder latency=13.684685s success=True
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct-GGUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen2.5-3B-Instruct-GGUF/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: HEAD https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf "HTTP/1.1 302 Found"
+INFO:app.services.llm_service:LLM loaded in 2.05s; GPU layers offloaded=37
+INFO:app.timing:Pipeline stage=startup.llm latency=2.185525s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.003181s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.009292s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.001241s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.002966s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.002307s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.022865s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000874s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.005123s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.050014s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002900s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.008156s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000087s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000625s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001989s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.121446s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000751s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.004126s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.141750s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.003667s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.008802s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000091s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000696s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001673s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.104841s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000812s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.003723s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.126709s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002251s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.009448s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000111s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000668s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001734s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.107278s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.002781s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.004454s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.130668s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002059s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.012265s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000106s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000673s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001935s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.098433s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000815s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.003420s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.121403s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002256s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.018845s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000092s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000573s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001527s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.145877s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000836s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.003977s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.175835s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.001890s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.008464s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000109s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000607s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001779s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.107878s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.001023s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.006495s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.129961s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002104s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.008424s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000112s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000646s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001961s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.111911s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.001434s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.005725s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.133961s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002558s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.033796s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000120s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000638s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.001957s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.109100s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.000914s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.009298s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.160279s success=True
+INFO:app.timing:Pipeline stage=ingest.duplicate_check latency=0.002102s success=True
+INFO:app.timing:Pipeline stage=ingest.parse latency=0.011754s success=True
+INFO:app.timing:Pipeline stage=ingest.preprocess latency=0.000173s success=True
+INFO:app.timing:Pipeline stage=ingest.metadata latency=0.000632s success=True
+INFO:app.timing:Pipeline stage=ingest.chunk latency=0.002419s success=True
+INFO:app.timing:Pipeline stage=ingest.embed latency=0.110532s success=True
+INFO:app.timing:Pipeline stage=ingest.write_file latency=0.001665s success=True
+INFO:app.timing:Pipeline stage=ingest.store latency=0.004987s success=True
+INFO:app.timing:Pipeline stage=ingest.total latency=0.136265s success=True
+INFO:app.timing:Pipeline stage=screening.create latency=0.010063s success=True
+INFO:app.services.llm_service:LLM prompt_cache miss
+INFO:app.services.llm_service:LLM call prompt_tokens=140 latency=4.62s tokens_per_second=12.54
+INFO:app.services.llm_service:LLM prompt_eval schema=ParsedJD tokens=137 milliseconds=777.74
+INFO:app.timing:Pipeline stage=screening.jd_embed latency=0.078546s success=True
+INFO:app.timing:Pipeline stage=screening.jd_parse latency=4.725973s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['parse_jd']
+INFO:app.timing:Pipeline stage=screening.retrieve latency=0.056192s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['retrieve']
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['fan_out_candidates']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000915s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.003005s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=3
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=12.98s tokens_per_second=15.87
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=546 milliseconds=2723.97
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=13.181383s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.003621s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=26d6c39a-d3f1-420e-b244-e5c13f283b57 cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002130s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000139s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002402s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=14.47s tokens_per_second=16.86
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=211.76
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=14.466024s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.006158s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=5e260057-57b4-4233-a94e-f96328b9152e cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.003288s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000142s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.004327s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=14.17s tokens_per_second=17.78
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=263.13
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=14.168290s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.003375s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=d1846672-11cf-4fc2-8314-a3fb4dd6b6f7 cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.005693s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000139s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002308s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=476
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=11.59s tokens_per_second=21.99
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=73 milliseconds=425.53
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=11.601418s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.003276s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=c3908d5f-5da2-4b16-b0b7-c2d9368553ac cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.005904s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000138s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.001952s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=11.17s tokens_per_second=22.82
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=211.52
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=11.173342s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.002938s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=c0a38216-b1a6-47e9-a903-036fee06ebc0 cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002564s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000137s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002173s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=10.91s tokens_per_second=21.18
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=212.17
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=10.923581s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.003314s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=a15ae518-a280-488c-98c3-152358a05a63 cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.005591s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000147s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002067s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=12.58s tokens_per_second=20.35
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=212.80
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=12.588604s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.003489s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=7763b581-7130-4f64-ac57-542c8f44b5ee cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002869s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000134s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002453s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=11.39s tokens_per_second=21.33
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=211.76
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=11.401459s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.006806s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=6afd0a92-c749-46b4-9d9b-7165236abce4 cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002771s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000135s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002058s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=11.59s tokens_per_second=21.91
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=211.64
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=11.591221s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.006034s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=868ba1e0-5886-4955-bcda-765f5c1fd3dc cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002643s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000139s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002112s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=510
+INFO:app.services.llm_service:LLM call prompt_tokens=552 latency=11.95s tokens_per_second=20.75
+INFO:app.services.llm_service:LLM prompt_eval schema=RequestedEvaluation tokens=39 milliseconds=211.41
+INFO:app.timing:Pipeline stage=candidate.evaluate latency=11.957971s success=True
+INFO:app.timing:Pipeline stage=candidate.verify latency=0.004250s success=True
+INFO:app.screening.graph:Candidate saved jd=a62b4627-70a7-40a9-839f-8154c095afce resume=01f9041c-80e8-4ed2-bf1e-502d76c11c8d cache_hit=False
+INFO:app.timing:Pipeline stage=candidate.save latency=0.004365s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['candidate']
+INFO:app.timing:Pipeline stage=screening.rank latency=0.009854s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['rank']
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=6
+INFO:app.services.llm_service:LLM call prompt_tokens=155 latency=2.88s tokens_per_second=10.09
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=146 milliseconds=832.12
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=2.874081s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=123
+INFO:app.services.llm_service:LLM call prompt_tokens=155 latency=2.42s tokens_per_second=11.97
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=29 milliseconds=220.38
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=2.440789s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=96
+INFO:app.services.llm_service:LLM call prompt_tokens=150 latency=2.89s tokens_per_second=11.07
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=51 milliseconds=357.87
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=2.900873s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=118
+INFO:app.services.llm_service:LLM call prompt_tokens=150 latency=2.53s tokens_per_second=12.64
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=29 milliseconds=259.45
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=2.541881s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=78
+INFO:app.services.llm_service:LLM call prompt_tokens=150 latency=2.33s tokens_per_second=12.03
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=69 milliseconds=430.60
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=2.324680s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=102
+INFO:app.services.llm_service:LLM call prompt_tokens=135 latency=1.86s tokens_per_second=12.91
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=30 milliseconds=215.21
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=1.859953s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=138
+INFO:app.services.llm_service:LLM call prompt_tokens=150 latency=1.76s tokens_per_second=13.03
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=9 milliseconds=91.43
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=1.772261s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=123
+INFO:app.services.llm_service:LLM call prompt_tokens=135 latency=1.72s tokens_per_second=13.96
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=9 milliseconds=92.19
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=1.728222s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=123
+INFO:app.services.llm_service:LLM call prompt_tokens=135 latency=1.83s tokens_per_second=13.13
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=9 milliseconds=92.01
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=1.839125s success=True
+INFO:app.services.llm_service:LLM prompt_cache hit prefix_tokens=70
+INFO:app.services.llm_service:LLM call prompt_tokens=109 latency=1.81s tokens_per_second=12.69
+INFO:app.services.llm_service:LLM prompt_eval schema=Summary tokens=36 milliseconds=222.62
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=1.828264s success=True
+INFO:app.timing:Pipeline stage=screening.report latency=22.135411s success=True
+INFO:app.screening.graph:Screening graph event jd=a62b4627-70a7-40a9-839f-8154c095afce nodes=['report']
+INFO:app.timing:Pipeline stage=screening.total latency=150.354374s success=True
+INFO:app.timing:Pipeline stage=output.read latency=0.003372s success=True
+INFO:app.timing:Pipeline stage=screening.jd_parse latency=0.006480s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['parse_jd']
+INFO:app.timing:Pipeline stage=screening.retrieve latency=0.037721s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['retrieve']
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['fan_out_candidates']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000166s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002144s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=26d6c39a-d3f1-420e-b244-e5c13f283b57 cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002383s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000137s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002198s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=5e260057-57b4-4233-a94e-f96328b9152e cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002453s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000138s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002244s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=d1846672-11cf-4fc2-8314-a3fb4dd6b6f7 cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.001996s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000137s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002829s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=c3908d5f-5da2-4b16-b0b7-c2d9368553ac cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.004259s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000139s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002057s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=c0a38216-b1a6-47e9-a903-036fee06ebc0 cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002579s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000135s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002349s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=a15ae518-a280-488c-98c3-152358a05a63 cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.001938s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000134s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002095s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=7763b581-7130-4f64-ac57-542c8f44b5ee cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002301s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000136s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002090s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=6afd0a92-c749-46b4-9d9b-7165236abce4 cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.002123s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000136s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002682s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=868ba1e0-5886-4955-bcda-765f5c1fd3dc cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.004357s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=candidate.anonymize latency=0.000136s success=True
+INFO:app.timing:Pipeline stage=candidate.prepare latency=0.002644s success=True
+INFO:app.screening.graph:Candidate saved jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a resume=01f9041c-80e8-4ed2-bf1e-502d76c11c8d cache_hit=True
+INFO:app.timing:Pipeline stage=candidate.save latency=0.004037s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['candidate']
+INFO:app.timing:Pipeline stage=screening.rank latency=0.009009s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['rank']
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001264s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001257s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001541s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001248s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001262s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.003188s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001300s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001390s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001122s success=True
+INFO:app.timing:Pipeline stage=candidate.report_summary latency=0.001171s success=True
+INFO:app.timing:Pipeline stage=screening.report latency=0.034762s success=True
+INFO:app.screening.graph:Screening graph event jd=3e7140f9-5177-4d87-b4a6-72d7ce57a98a nodes=['report']
+INFO:app.timing:Pipeline stage=screening.total latency=0.486761s success=True
+INFO:app.timing:Pipeline stage=output.read latency=0.003173s success=True

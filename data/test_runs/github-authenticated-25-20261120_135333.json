@@ -1,0 +1,992 @@
+{
+  "indexed_resumes": 25,
+  "retrieved": 25,
+  "scored": 21,
+  "authenticated": true,
+  "quota_start": {
+    "core": {
+      "limit": 5000,
+      "remaining": 4997,
+      "reset": 1795165423
+    },
+    "graphql": {
+      "limit": 5000,
+      "remaining": 4994,
+      "reset": 1795166477
+    },
+    "search": {
+      "limit": 30,
+      "remaining": 30,
+      "reset": 1795163074
+    }
+  },
+  "quota_end": {
+    "core": {
+      "limit": 5000,
+      "remaining": 4592,
+      "reset": 1795165423
+    },
+    "graphql": {
+      "limit": 5000,
+      "remaining": 4994,
+      "reset": 1795166477
+    },
+    "search": {
+      "limit": 30,
+      "remaining": 30,
+      "reset": 1795163424
+    }
+  },
+  "status_counts": {
+    "ok": 20,
+    "failed": 2,
+    "not_found": 1,
+    "not_provided": 1,
+    "partial": 1
+  },
+  "network_calls": 382,
+  "cache_hits": 47,
+  "secondary_limits": 0,
+  "secondary_limit_hits": 0,
+  "primary_limit_hits": 0,
+  "reserve_deferrals": 0,
+  "config_blocks": 0,
+  "results": [
+    {
+      "resume_id": "b729f8be-eac1-4b7c-aa00-01297ae4c15b",
+      "status": "ok",
+      "github_score": 59,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 48.5,
+        "code_quality": 46.88,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1808,
+        "public_repos": 56,
+        "original_repos": 44,
+        "followers": 12,
+        "languages": {
+          "Go": 75214,
+          "TeX": 110470,
+          "Lean": 19395,
+          "Shell": 3171,
+          "Python": 35387,
+          "BibTeX Style": 30065,
+          "C": 3053,
+          "C++": 283009,
+          "JavaScript": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 12,
+        "active_days": 5,
+        "days_since_push": 73
+      },
+      "summary": "Checked 5 public repositories and verified 1 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 4,
+      "cache_hits": 16,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "ccbc0a06-d1e5-474e-b9bf-5a4b3c115b65",
+      "status": "ok",
+      "github_score": 58,
+      "subscores": {
+        "project_match": 68.75,
+        "activity": 80.72,
+        "code_quality": 70.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1092,
+        "public_repos": 31,
+        "original_repos": 31,
+        "followers": 1,
+        "languages": {
+          "CSS": 54343,
+          "HTML": 87341,
+          "Python": 237799,
+          "JavaScript": 68142,
+          "Batchfile": 83,
+          "Dockerfile": 521
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 26,
+        "active_days": 7,
+        "days_since_push": 2
+      },
+      "summary": "Checked 5 public repositories and verified 5 of 8 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 5,
+      "cache_hits": 16,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "4985f17b-f83b-4c1c-a429-5a153ab14f4d",
+      "status": "ok",
+      "github_score": 59,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 53.2,
+        "code_quality": 40.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 903,
+        "public_repos": 36,
+        "original_repos": 36,
+        "followers": 1,
+        "languages": {
+          "Jupyter Notebook": 396449,
+          "HTML": 70498,
+          "Python": 107999,
+          "Dockerfile": 1274,
+          "JavaScript": 62048,
+          "CSS": 1951
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 14,
+        "active_days": 5,
+        "days_since_push": 48
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 2 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "a2ae6242-0b4e-47e7-86ff-66dd809b74ab",
+      "status": "ok",
+      "github_score": 51,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 29.87,
+        "code_quality": 27.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1022,
+        "public_repos": 26,
+        "original_repos": 26,
+        "followers": 4,
+        "languages": {
+          "JavaScript": 220614,
+          "Python": 18264,
+          "C++": 9719,
+          "Batchfile": 6557,
+          "TypeScript": 4955,
+          "Shell": 1483,
+          "PLpgSQL": 529,
+          "HTML": 15382,
+          "CSS": 21869
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 4,
+        "active_days": 4,
+        "days_since_push": 124
+      },
+      "summary": "Checked 5 public repositories and verified 1 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "becbfb4a-0489-42d6-8022-e8d3da52e7b7",
+      "status": "failed",
+      "github_score": null,
+      "subscores": null,
+      "signals": null,
+      "summary": "GitHub evidence could not be collected.",
+      "evidence_coverage": "none",
+      "stale": false,
+      "repos_inspected": 0,
+      "repos_total": 0,
+      "retry_after": null,
+      "error_category": "UntranslatableCharacter",
+      "network_calls": 0,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "61234775-e4c5-4a4c-a897-af48d6e22b03",
+      "status": "ok",
+      "github_score": 28,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 98.63,
+        "code_quality": 40.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1139,
+        "public_repos": 47,
+        "original_repos": 45,
+        "followers": 0,
+        "languages": {
+          "Python": 52808,
+          "HTML": 19153,
+          "JavaScript": 31728,
+          "TypeScript": 1,
+          "C++": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 38,
+        "active_days": 12,
+        "days_since_push": 25
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 0 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "436c5b8c-b840-4334-be1f-735546e2159b",
+      "status": "ok",
+      "github_score": 53,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 23.18,
+        "code_quality": 40.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1123,
+        "public_repos": 12,
+        "original_repos": 12,
+        "followers": 0,
+        "languages": {
+          "Jupyter Notebook": 819372,
+          "Python": 44242,
+          "Batchfile": 3643,
+          "TypeScript": 4124,
+          "JavaScript": 990,
+          "CSS": 485,
+          "HTML": 367
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 2,
+        "active_days": 2,
+        "days_since_push": 94
+      },
+      "summary": "Checked 5 public repositories and verified 3 of 3 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "2d228e27-6ece-4f91-bdec-d5745d7eb95e",
+      "status": "ok",
+      "github_score": 48,
+      "subscores": {
+        "project_match": 66.67,
+        "activity": 69.0,
+        "code_quality": 37.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 570,
+        "public_repos": 46,
+        "original_repos": 42,
+        "followers": 4,
+        "languages": {
+          "JavaScript": 962966,
+          "TypeScript": 32111,
+          "HTML": 3948,
+          "GLSL": 945,
+          "Go": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 16,
+        "active_days": 9,
+        "days_since_push": 3
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 3 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "d14bcc11-ab0c-41d3-a35b-3bf58e2bc316",
+      "status": "ok",
+      "github_score": 65,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 68.92,
+        "code_quality": 54.17,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 513,
+        "public_repos": 33,
+        "original_repos": 12,
+        "followers": 6,
+        "languages": {
+          "Python": 455492,
+          "TypeScript": 500099,
+          "CSS": 7751,
+          "Mako": 704,
+          "JavaScript": 1728,
+          "Makefile": 886,
+          "Go": 48758,
+          "HTML": 361
+        },
+        "sampled_repos": 5,
+        "authored_repos": 3,
+        "recent_commits": 21,
+        "active_days": 8,
+        "days_since_push": 111
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 2 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "d77d86c9-c42d-4ad8-9475-0dd10f19c070",
+      "status": "failed",
+      "github_score": null,
+      "subscores": null,
+      "signals": null,
+      "summary": "GitHub evidence could not be collected.",
+      "evidence_coverage": "none",
+      "stale": false,
+      "repos_inspected": 0,
+      "repos_total": 0,
+      "retry_after": null,
+      "error_category": "HTTPStatusError",
+      "network_calls": 0,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "c5ed40ba-9678-40bb-9f9d-994b5dbe4fac",
+      "status": "not_found",
+      "github_score": null,
+      "subscores": null,
+      "signals": null,
+      "summary": "GitHub profile not found.",
+      "evidence_coverage": "none",
+      "stale": false,
+      "repos_inspected": 0,
+      "repos_total": 0,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 1,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "f623eab2-8963-47a2-9d1f-716765e724eb",
+      "status": "ok",
+      "github_score": 8,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 19.73,
+        "code_quality": 20.83,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 918,
+        "public_repos": 96,
+        "original_repos": 58,
+        "followers": 6,
+        "languages": {
+          "JavaScript": 754864,
+          "CSS": 212667,
+          "HTML": 1609
+        },
+        "sampled_repos": 5,
+        "authored_repos": 1,
+        "recent_commits": 0,
+        "active_days": 0,
+        "days_since_push": 5
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "f6fc4665-b447-4c4a-99e4-c154208ebdfd",
+      "status": "ok",
+      "github_score": 62,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 71.73,
+        "code_quality": 37.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 888,
+        "public_repos": 29,
+        "original_repos": 28,
+        "followers": 2,
+        "languages": {
+          "Python": 72786,
+          "Jupyter Notebook": 19746477,
+          "TypeScript": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 18,
+        "active_days": 9,
+        "days_since_push": 14
+      },
+      "summary": "Checked 5 public repositories and verified 3 of 3 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 5,
+      "cache_hits": 15,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "f0342d4d-4421-409c-9880-70b89c083923",
+      "status": "ok",
+      "github_score": 48,
+      "subscores": {
+        "project_match": 50.0,
+        "activity": 87.53,
+        "code_quality": 50.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 261,
+        "public_repos": 7,
+        "original_repos": 7,
+        "followers": 1,
+        "languages": {
+          "Python": 197022,
+          "JavaScript": 11046,
+          "HTML": 18447,
+          "Mako": 591,
+          "Dockerfile": 393,
+          "CSS": 1336
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 30,
+        "active_days": 8,
+        "days_since_push": 45
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 4 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "2e769c01-04f7-4896-a6c9-95c47972f9de",
+      "status": "ok",
+      "github_score": 11,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 20.66,
+        "code_quality": 32.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 684,
+        "public_repos": 10,
+        "original_repos": 10,
+        "followers": 2,
+        "languages": {
+          "Java": 480,
+          "Python": 31144,
+          "Jupyter Notebook": 2
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 2,
+        "active_days": 2,
+        "days_since_push": 140
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 0 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "e0e8140e-c608-4a4f-8ac4-f4b6b4585aa7",
+      "status": "ok",
+      "github_score": 26,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 74.0,
+        "code_quality": 57.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1213,
+        "public_repos": 26,
+        "original_repos": 24,
+        "followers": 2,
+        "languages": {
+          "HTML": 502008292,
+          "Python": 1177233,
+          "TypeScript": 392848,
+          "Jupyter Notebook": 25696,
+          "CSS": 11917,
+          "PowerShell": 3062,
+          "Shell": 3154,
+          "Dockerfile": 2100,
+          "JavaScript": 2645,
+          "Makefile": 1096
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 25,
+        "active_days": 5,
+        "days_since_push": 3
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 22,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "84cfc6b9-ce11-4318-8567-26ea56425bec",
+      "status": "ok",
+      "github_score": 37,
+      "subscores": {
+        "project_match": 66.67,
+        "activity": 22.03,
+        "code_quality": 30.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1171,
+        "public_repos": 166,
+        "original_repos": 143,
+        "followers": 4,
+        "languages": {
+          "TypeScript": 475813,
+          "CSS": 8038,
+          "HTML": 1289,
+          "JavaScript": 1101,
+          "Python": 25255
+        },
+        "sampled_repos": 5,
+        "authored_repos": 3,
+        "recent_commits": 1,
+        "active_days": 1,
+        "days_since_push": 39
+      },
+      "summary": "Checked 5 public repositories and verified 2 of 3 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "4d90827b-7522-436c-8495-d65b2dce74db",
+      "status": "ok",
+      "github_score": 54,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 43.21,
+        "code_quality": 27.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 766,
+        "public_repos": 35,
+        "original_repos": 35,
+        "followers": 2,
+        "languages": {
+          "JavaScript": 53141,
+          "Python": 27719,
+          "CSS": 7630,
+          "HTML": 1095,
+          "Java": 1
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 10,
+        "active_days": 4,
+        "days_since_push": 63
+      },
+      "summary": "Checked 5 public repositories and verified 1 of 1 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "1145ef45-9db8-473f-96ff-0d14c4a08437",
+      "status": "not_provided",
+      "github_score": null,
+      "subscores": null,
+      "signals": null,
+      "summary": "No GitHub profile found on resume.",
+      "evidence_coverage": "none",
+      "stale": false,
+      "repos_inspected": 0,
+      "repos_total": 0,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 0,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "35175b02-1f86-46a5-98a1-5766696e4d4a",
+      "status": "ok",
+      "github_score": 64,
+      "subscores": {
+        "project_match": 91.67,
+        "activity": 94.78,
+        "code_quality": 40.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1581,
+        "public_repos": 31,
+        "original_repos": 28,
+        "followers": 12,
+        "languages": {
+          "HTML": 5544826,
+          "TypeScript": 1209591,
+          "CSS": 276876,
+          "Python": 654336,
+          "JavaScript": 56133,
+          "Shell": 38671,
+          "Dockerfile": 1750
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 30,
+        "active_days": 10,
+        "days_since_push": 4
+      },
+      "summary": "Checked 5 public repositories and verified 5 of 6 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "e4263973-ee3a-4ffe-9a8e-5d099a4e4249",
+      "status": "partial",
+      "github_score": 67,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 87.5,
+        "code_quality": 45.83,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1141,
+        "public_repos": 59,
+        "original_repos": 58,
+        "followers": 12,
+        "languages": {
+          "Python": 1044654,
+          "JavaScript": 275563,
+          "Dockerfile": 2203,
+          "CSS": 18745,
+          "HTML": 160164,
+          "C++": 510,
+          "PowerShell": 508,
+          "Jupyter Notebook": 3827538,
+          "Shell": 133,
+          "Procfile": 95
+        },
+        "sampled_repos": 3,
+        "authored_repos": 3,
+        "recent_commits": 30,
+        "active_days": 7,
+        "days_since_push": 0
+      },
+      "summary": "Based on 3 of 5 repositories.",
+      "evidence_coverage": "partial",
+      "stale": false,
+      "repos_inspected": 3,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 17,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "ce8e3707-292b-4041-bc77-f6e74629c886",
+      "status": "ok",
+      "github_score": 30,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 99.56,
+        "code_quality": 52.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1055,
+        "public_repos": 18,
+        "original_repos": 18,
+        "followers": 0,
+        "languages": {
+          "TypeScript": 757611,
+          "Python": 670581,
+          "PowerShell": 16101,
+          "Shell": 9379,
+          "CSS": 76818,
+          "HTML": 20069,
+          "Dockerfile": 8983,
+          "HCL": 4445,
+          "Batchfile": 1906,
+          "JavaScript": 193925
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 43,
+        "active_days": 14,
+        "days_since_push": 8
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 0 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 22,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "c9b75e43-6160-4b83-9321-bc08ff210694",
+      "status": "ok",
+      "github_score": 35,
+      "subscores": {
+        "project_match": 50.0,
+        "activity": 17.64,
+        "code_quality": 57.5,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 1876,
+        "public_repos": 30,
+        "original_repos": 29,
+        "followers": 1,
+        "languages": {
+          "Python": 179583,
+          "Shell": 6398,
+          "Batchfile": 4859,
+          "Makefile": 2848,
+          "Dockerfile": 2345
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 0,
+        "active_days": 0,
+        "days_since_push": 43
+      },
+      "summary": "Checked 5 public repositories and verified 1 of 2 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "50098956-ae31-409f-ab31-bdfcc21623e0",
+      "status": "ok",
+      "github_score": 66,
+      "subscores": {
+        "project_match": 100.0,
+        "activity": 73.0,
+        "code_quality": 59.38,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 2360,
+        "public_repos": 22,
+        "original_repos": 10,
+        "followers": 258,
+        "languages": {
+          "Python": 594148,
+          "HTML": 58240,
+          "CSS": 12988,
+          "JavaScript": 7281,
+          "TypeScript": 928499
+        },
+        "sampled_repos": 5,
+        "authored_repos": 4,
+        "recent_commits": 20,
+        "active_days": 8,
+        "days_since_push": 6
+      },
+      "summary": "Checked 5 public repositories and verified 3 of 3 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 21,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    },
+    {
+      "resume_id": "c79123ae-7857-4afd-a5eb-ff18013f4017",
+      "status": "ok",
+      "github_score": 19,
+      "subscores": {
+        "project_match": 0.0,
+        "activity": 64.65,
+        "code_quality": 30.0,
+        "jd_relevance": 0.0
+      },
+      "signals": {
+        "account_age_days": 2082,
+        "public_repos": 84,
+        "original_repos": 81,
+        "followers": 27,
+        "languages": {
+          "Python": 32850,
+          "Jupyter Notebook": 11820920
+        },
+        "sampled_repos": 5,
+        "authored_repos": 5,
+        "recent_commits": 15,
+        "active_days": 9,
+        "days_since_push": 52
+      },
+      "summary": "Checked 5 public repositories and verified 0 of 0 project claims.",
+      "evidence_coverage": "full",
+      "stale": false,
+      "repos_inspected": 5,
+      "repos_total": 5,
+      "retry_after": null,
+      "error_category": null,
+      "network_calls": 20,
+      "cache_hits": 0,
+      "secondary_limits": 0,
+      "primary_limit_hits": 0
+    }
+  ]
+}

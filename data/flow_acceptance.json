@@ -1,0 +1,12 @@
+{
+  "jd_id": "d5133c9c-4bf0-4990-a24c-bfccd66f5034",
+  "status": {
+    "total": 2,
+    "done": 2,
+    "errors": 0,
+    "filtered_out": 0,
+    "state": "done",
+    "error_message": null
+  },
+  "rerank_without_llm": true
+}

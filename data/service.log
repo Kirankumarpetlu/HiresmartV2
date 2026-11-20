@@ -1,0 +1,750 @@
+2026-11-12 17:14:04,046 INFO app.services.embed_service CPU embedder loaded in 4.30s
+2026-11-12 17:14:06,249 INFO app.services.llm_service LLM loaded in 2.05s; GPU layers offloaded=37
+2026-11-12 17:15:24,646 INFO app.services.llm_service LLM call prompt_tokens=71 latency=3.70s tokens_per_second=14.31
+2026-11-12 17:15:42,808 INFO app.services.llm_service LLM call prompt_tokens=369 latency=17.78s tokens_per_second=15.58
+2026-11-12 17:16:06,732 INFO app.services.llm_service LLM call prompt_tokens=344 latency=23.88s tokens_per_second=16.80
+2026-11-12 17:16:12,431 INFO app.services.llm_service LLM call prompt_tokens=189 latency=5.69s tokens_per_second=8.26
+2026-11-12 17:16:17,535 INFO app.services.llm_service LLM call prompt_tokens=146 latency=5.09s tokens_per_second=10.99
+2026-11-12 17:20:34,284 INFO app.services.llm_service LLM call prompt_tokens=65 latency=3.27s tokens_per_second=15.62
+2026-11-12 17:20:57,653 INFO app.services.llm_service LLM call prompt_tokens=367 latency=23.08s tokens_per_second=17.25
+2026-11-12 17:21:56,136 INFO app.services.embed_service CPU embedder loaded in 4.16s
+2026-11-12 17:21:58,420 INFO app.services.llm_service LLM loaded in 2.14s; GPU layers offloaded=37
+2026-11-12 17:22:17,692 INFO app.services.llm_service LLM call prompt_tokens=342 latency=19.17s tokens_per_second=17.06
+2026-11-12 17:22:17,692 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=JSONDecodeError
+2026-11-12 17:22:39,758 INFO app.services.llm_service LLM call prompt_tokens=342 latency=20.89s tokens_per_second=17.52
+2026-11-12 17:22:39,758 INFO app.screening.graph Candidate saved jd=c9676cb7-d3e6-4cf9-b922-cc76ed133a4f resume=8964513a-ad65-4afa-a61a-882ef411cb53
+2026-11-12 17:23:21,312 INFO app.services.llm_service LLM call prompt_tokens=392 latency=41.55s tokens_per_second=14.44
+2026-11-12 17:23:21,312 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValueError
+2026-11-12 17:24:02,697 INFO app.services.llm_service LLM call prompt_tokens=392 latency=40.36s tokens_per_second=14.87
+2026-11-12 17:24:02,697 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValueError
+2026-11-12 17:24:44,921 INFO app.services.llm_service LLM call prompt_tokens=392 latency=40.12s tokens_per_second=14.95
+2026-11-12 17:24:44,921 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValueError
+2026-11-12 17:24:44,922 ERROR app.screening.graph Candidate failed jd=c9676cb7-d3e6-4cf9-b922-cc76ed133a4f resume=8113c830-12d5-4b32-94c0-2a5d24dd4c31 type=ValueError
+2026-11-12 17:24:50,669 INFO app.services.llm_service LLM call prompt_tokens=193 latency=5.72s tokens_per_second=11.02
+2026-11-12 17:24:57,230 INFO app.services.llm_service LLM call prompt_tokens=228 latency=6.55s tokens_per_second=11.61
+2026-11-12 17:28:27,435 INFO app.services.embed_service CPU embedder loaded in 4.30s
+2026-11-12 17:28:29,805 INFO app.services.llm_service LLM loaded in 2.23s; GPU layers offloaded=37
+2026-11-12 17:28:46,268 INFO app.services.llm_service LLM call prompt_tokens=420 latency=16.36s tokens_per_second=16.93
+2026-11-12 17:28:46,284 INFO app.screening.graph Candidate saved jd=c9676cb7-d3e6-4cf9-b922-cc76ed133a4f resume=8113c830-12d5-4b32-94c0-2a5d24dd4c31
+2026-11-12 17:28:52,371 INFO app.services.llm_service LLM call prompt_tokens=191 latency=6.08s tokens_per_second=10.86
+2026-11-12 17:40:49,662 INFO app.services.embed_service CPU embedder loaded in 4.30s
+2026-11-12 17:40:51,883 INFO app.services.llm_service LLM loaded in 2.11s; GPU layers offloaded=37
+2026-11-12 17:41:34,721 INFO app.services.llm_service LLM call prompt_tokens=931 latency=28.84s tokens_per_second=10.85
+2026-11-12 17:42:55,970 INFO app.services.llm_service LLM call prompt_tokens=1369 latency=80.03s tokens_per_second=14.99
+2026-11-12 17:42:55,970 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValueError
+2026-11-12 17:45:29,878 INFO app.services.embed_service CPU embedder loaded in 4.34s
+2026-11-12 17:45:32,145 INFO app.services.llm_service LLM loaded in 2.16s; GPU layers offloaded=37
+2026-11-12 17:46:25,834 INFO app.services.llm_service LLM call prompt_tokens=931 latency=29.02s tokens_per_second=10.79
+2026-11-12 17:47:02,349 INFO app.services.llm_service LLM call prompt_tokens=1281 latency=35.19s tokens_per_second=12.48
+2026-11-12 17:47:02,360 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=e670dbfe-ace3-45c3-b336-7539a7a104dd
+2026-11-12 17:48:06,528 INFO app.services.llm_service LLM call prompt_tokens=1043 latency=64.16s tokens_per_second=17.36
+2026-11-12 17:48:06,536 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=df309ea7-7fab-408d-a9ea-56cac0ee15f6
+2026-11-12 17:48:34,094 INFO app.services.llm_service LLM call prompt_tokens=1110 latency=27.56s tokens_per_second=13.79
+2026-11-12 17:48:34,109 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=f5a14d8a-82ce-4563-b52b-efc07e549275
+2026-11-12 17:49:04,158 INFO app.services.llm_service LLM call prompt_tokens=1168 latency=30.05s tokens_per_second=14.61
+2026-11-12 17:49:04,181 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=792b0170-46f4-4eaf-ab54-05ed556b6f64
+2026-11-12 17:49:30,173 INFO app.services.llm_service LLM call prompt_tokens=1096 latency=25.98s tokens_per_second=15.01
+2026-11-12 17:49:30,173 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 17:49:53,558 INFO app.services.llm_service LLM call prompt_tokens=1096 latency=22.25s tokens_per_second=16.94
+2026-11-12 17:49:53,558 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=cb213a94-8f35-4156-a69e-25980bbff35a
+2026-11-12 17:50:30,529 INFO app.services.llm_service LLM call prompt_tokens=1438 latency=36.95s tokens_per_second=13.67
+2026-11-12 17:50:30,544 INFO app.screening.graph Candidate saved jd=f8f55cbb-8211-4cbd-9da1-1cfadebbf62c resume=5eb4d019-48a9-4185-adba-ce46a02c031e
+2026-11-12 17:51:34,009 INFO app.services.embed_service CPU embedder loaded in 4.03s
+2026-11-12 17:51:36,343 INFO app.services.llm_service LLM loaded in 2.23s; GPU layers offloaded=37
+2026-11-12 17:52:26,865 INFO app.services.llm_service LLM call prompt_tokens=931 latency=29.55s tokens_per_second=10.59
+2026-11-12 17:53:05,584 INFO app.services.llm_service LLM call prompt_tokens=1288 latency=37.69s tokens_per_second=12.36
+2026-11-12 17:53:05,591 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=e670dbfe-ace3-45c3-b336-7539a7a104dd
+2026-11-12 17:53:40,933 INFO app.services.llm_service LLM call prompt_tokens=1050 latency=35.33s tokens_per_second=13.81
+2026-11-12 17:53:40,933 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 17:54:08,788 INFO app.services.llm_service LLM call prompt_tokens=1050 latency=26.72s tokens_per_second=16.80
+2026-11-12 17:54:08,789 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 17:54:37,396 INFO app.services.llm_service LLM call prompt_tokens=1050 latency=26.56s tokens_per_second=16.90
+2026-11-12 17:54:37,397 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValidationError
+2026-11-12 17:54:37,397 ERROR app.screening.graph Candidate failed jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=df309ea7-7fab-408d-a9ea-56cac0ee15f6 type=ValidationError
+2026-11-12 17:55:05,867 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=28.45s tokens_per_second=15.92
+2026-11-12 17:55:05,867 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 17:55:26,307 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=19.22s tokens_per_second=19.25
+2026-11-12 17:55:26,307 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 17:55:47,520 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=19.19s tokens_per_second=19.28
+2026-11-12 17:55:47,520 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValidationError
+2026-11-12 17:55:47,520 ERROR app.screening.graph Candidate failed jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=f5a14d8a-82ce-4563-b52b-efc07e549275 type=ValidationError
+2026-11-12 17:56:13,040 INFO app.services.llm_service LLM call prompt_tokens=1175 latency=25.50s tokens_per_second=15.29
+2026-11-12 17:56:13,040 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 17:56:34,242 INFO app.services.llm_service LLM call prompt_tokens=1175 latency=20.08s tokens_per_second=19.37
+2026-11-12 17:56:34,242 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 17:58:18,283 INFO app.services.embed_service CPU embedder loaded in 4.08s
+2026-11-12 17:58:20,639 INFO app.services.llm_service LLM loaded in 2.20s; GPU layers offloaded=37
+2026-11-12 17:58:49,510 INFO app.services.llm_service LLM call prompt_tokens=1050 latency=28.44s tokens_per_second=14.35
+2026-11-12 17:58:49,530 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=df309ea7-7fab-408d-a9ea-56cac0ee15f6
+2026-11-12 17:59:16,794 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=27.25s tokens_per_second=15.38
+2026-11-12 17:59:16,794 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 17:59:40,790 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=22.91s tokens_per_second=18.34
+2026-11-12 17:59:40,790 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 18:00:06,323 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=23.31s tokens_per_second=18.02
+2026-11-12 18:00:06,323 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValidationError
+2026-11-12 18:00:06,323 ERROR app.screening.graph Candidate failed jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=f5a14d8a-82ce-4563-b52b-efc07e549275 type=ValidationError
+2026-11-12 18:00:31,474 INFO app.services.llm_service LLM call prompt_tokens=1175 latency=25.12s tokens_per_second=16.04
+2026-11-12 18:00:31,474 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=792b0170-46f4-4eaf-ab54-05ed556b6f64
+2026-11-12 18:00:59,536 INFO app.services.llm_service LLM call prompt_tokens=1103 latency=28.03s tokens_per_second=15.88
+2026-11-12 18:00:59,537 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 18:01:26,139 INFO app.services.llm_service LLM call prompt_tokens=1103 latency=25.56s tokens_per_second=17.45
+2026-11-12 18:01:26,139 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 18:01:54,452 INFO app.services.llm_service LLM call prompt_tokens=1103 latency=26.11s tokens_per_second=17.08
+2026-11-12 18:01:54,452 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValidationError
+2026-11-12 18:01:54,452 ERROR app.screening.graph Candidate failed jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=cb213a94-8f35-4156-a69e-25980bbff35a type=ValidationError
+2026-11-12 18:02:29,545 INFO app.services.llm_service LLM call prompt_tokens=1445 latency=35.06s tokens_per_second=13.78
+2026-11-12 18:02:29,550 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=5eb4d019-48a9-4185-adba-ce46a02c031e
+2026-11-12 18:02:54,574 INFO app.services.llm_service LLM call prompt_tokens=1430 latency=25.02s tokens_per_second=15.67
+2026-11-12 18:02:54,574 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 18:03:16,561 INFO app.services.llm_service LLM call prompt_tokens=1430 latency=20.81s tokens_per_second=18.83
+2026-11-12 18:03:16,561 WARNING app.services.llm_service LLM call/validation failed attempt=2 type=ValidationError
+2026-11-12 18:03:39,727 INFO app.services.llm_service LLM call prompt_tokens=1430 latency=20.95s tokens_per_second=18.71
+2026-11-12 18:03:39,727 WARNING app.services.llm_service LLM call/validation failed attempt=3 type=ValidationError
+2026-11-12 18:03:39,727 ERROR app.screening.graph Candidate failed jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=73eb17d2-94f7-470a-ad16-2ef566a15b7d type=ValidationError
+2026-11-12 18:04:00,286 INFO app.services.llm_service LLM call prompt_tokens=1003 latency=20.55s tokens_per_second=17.86
+2026-11-12 18:04:00,286 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=47454ad6-d7ba-4b64-8978-ce7d27d2b228
+2026-11-12 18:05:42,344 INFO app.services.embed_service CPU embedder loaded in 4.14s
+2026-11-12 18:05:44,816 INFO app.services.llm_service LLM loaded in 2.34s; GPU layers offloaded=37
+2026-11-12 18:06:13,944 INFO app.services.llm_service LLM call prompt_tokens=1117 latency=28.78s tokens_per_second=14.31
+2026-11-12 18:06:13,952 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=f5a14d8a-82ce-4563-b52b-efc07e549275
+2026-11-12 18:06:42,376 INFO app.services.llm_service LLM call prompt_tokens=1103 latency=28.42s tokens_per_second=15.66
+2026-11-12 18:06:42,377 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 18:06:42,377 WARNING app.services.llm_service LLM validation fields=[('skills.0.confidence', 'less_than_equal'), ('skills.1.confidence', 'less_than_equal'), ('skills.2.confidence', 'less_than_equal'), ('skills.3.confidence', 'less_than_equal')]
+2026-11-12 18:07:14,039 INFO app.services.llm_service LLM call prompt_tokens=1197 latency=30.47s tokens_per_second=17.33
+2026-11-12 18:07:14,046 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=cb213a94-8f35-4156-a69e-25980bbff35a
+2026-11-12 18:07:40,325 INFO app.services.llm_service LLM call prompt_tokens=1430 latency=26.27s tokens_per_second=14.92
+2026-11-12 18:07:40,325 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 18:07:40,325 WARNING app.services.llm_service LLM validation fields=[('skills.0.confidence', 'less_than_equal'), ('skills.1.confidence', 'less_than_equal'), ('skills.2.confidence', 'less_than_equal'), ('skills.3.confidence', 'less_than_equal')]
+2026-11-12 18:08:03,838 INFO app.services.llm_service LLM call prompt_tokens=1524 latency=22.48s tokens_per_second=18.01
+2026-11-12 18:08:03,848 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=73eb17d2-94f7-470a-ad16-2ef566a15b7d
+2026-11-12 18:08:32,198 INFO app.services.llm_service LLM call prompt_tokens=1292 latency=28.33s tokens_per_second=15.53
+2026-11-12 18:08:32,198 WARNING app.services.llm_service LLM call/validation failed attempt=1 type=ValidationError
+2026-11-12 18:08:32,198 WARNING app.services.llm_service LLM validation fields=[('fit.experience', 'less_than_equal'), ('fit.domain', 'less_than_equal'), ('fit.education', 'less_than_equal')]
+2026-11-12 18:08:56,185 INFO app.services.llm_service LLM call prompt_tokens=1368 latency=22.77s tokens_per_second=16.56
+2026-11-12 18:08:56,191 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=24b49e18-2a94-45b3-87e0-889996d6b01a
+2026-11-12 18:09:23,469 INFO app.services.llm_service LLM call prompt_tokens=1261 latency=27.28s tokens_per_second=15.50
+2026-11-12 18:09:23,485 INFO app.screening.graph Candidate saved jd=a3c12c12-6db0-4d4a-8466-2e852f9fc3d2 resume=20c2a20e-3a83-48ae-a9e8-e17a3757e3f3
+2026-11-12 18:09:34,176 INFO app.services.llm_service LLM call prompt_tokens=456 latency=10.67s tokens_per_second=10.31
+2026-11-12 18:09:44,766 INFO app.services.llm_service LLM call prompt_tokens=634 latency=10.58s tokens_per_second=8.60
+2026-11-12 18:09:53,732 INFO app.services.llm_service LLM call prompt_tokens=419 latency=8.94s tokens_per_second=10.63
+2026-11-12 18:10:01,806 INFO app.services.llm_service LLM call prompt_tokens=429 latency=8.06s tokens_per_second=10.29
+2026-11-12 18:10:09,460 INFO app.services.llm_service LLM call prompt_tokens=361 latency=7.64s tokens_per_second=10.73
+2026-11-12 18:10:13,990 INFO app.services.llm_service LLM call prompt_tokens=244 latency=4.53s tokens_per_second=11.26
+2026-11-12 18:10:23,941 INFO app.services.llm_service LLM call prompt_tokens=388 latency=9.95s tokens_per_second=10.95
+2026-11-12 18:10:34,890 INFO app.services.llm_service LLM call prompt_tokens=471 latency=10.95s tokens_per_second=10.50
+2026-11-12 18:10:39,876 INFO app.services.llm_service LLM call prompt_tokens=238 latency=4.98s tokens_per_second=11.23
+2026-11-12 18:10:46,560 INFO app.services.llm_service LLM call prompt_tokens=228 latency=6.67s tokens_per_second=12.44
+2026-11-17 14:46:09,665 INFO app.services.embed_service CPU embedder loaded in 4.47s
+2026-11-17 14:46:12,032 INFO app.services.llm_service LLM loaded in 2.14s; GPU layers offloaded=37
+2026-11-17 14:46:37,075 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003005s success=True
+2026-11-17 14:46:37,076 INFO app.timing Pipeline stage=ingest.total latency=0.004278s success=True
+2026-11-17 14:46:37,169 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002349s success=True
+2026-11-17 14:46:37,170 INFO app.timing Pipeline stage=ingest.total latency=0.003515s success=True
+2026-11-17 14:46:37,217 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003354s success=True
+2026-11-17 14:46:37,218 INFO app.timing Pipeline stage=ingest.total latency=0.005314s success=True
+2026-11-17 14:46:37,261 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002965s success=True
+2026-11-17 14:46:37,262 INFO app.timing Pipeline stage=ingest.total latency=0.004729s success=True
+2026-11-17 14:46:37,291 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003239s success=True
+2026-11-17 14:46:37,292 INFO app.timing Pipeline stage=ingest.total latency=0.004852s success=True
+2026-11-17 14:46:37,351 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003583s success=True
+2026-11-17 14:46:37,352 INFO app.timing Pipeline stage=ingest.total latency=0.004827s success=True
+2026-11-17 14:46:37,366 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002166s success=True
+2026-11-17 14:46:37,367 INFO app.timing Pipeline stage=ingest.total latency=0.003437s success=True
+2026-11-17 14:46:37,404 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002955s success=True
+2026-11-17 14:46:37,405 INFO app.timing Pipeline stage=ingest.total latency=0.004758s success=True
+2026-11-17 14:46:37,436 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002169s success=True
+2026-11-17 14:46:37,437 INFO app.timing Pipeline stage=ingest.total latency=0.005503s success=True
+2026-11-17 14:46:37,459 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.001962s success=True
+2026-11-17 14:46:37,459 INFO app.timing Pipeline stage=ingest.total latency=0.003151s success=True
+2026-11-17 14:46:37,515 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003703s success=True
+2026-11-17 14:46:37,516 INFO app.timing Pipeline stage=ingest.total latency=0.005142s success=True
+2026-11-17 14:46:37,537 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.001821s success=True
+2026-11-17 14:46:37,538 INFO app.timing Pipeline stage=ingest.total latency=0.003451s success=True
+2026-11-17 14:46:37,577 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002254s success=True
+2026-11-17 14:46:37,578 INFO app.timing Pipeline stage=ingest.total latency=0.003935s success=True
+2026-11-17 14:46:37,612 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002172s success=True
+2026-11-17 14:46:37,612 INFO app.timing Pipeline stage=ingest.total latency=0.003757s success=True
+2026-11-17 14:46:37,681 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002713s success=True
+2026-11-17 14:46:37,682 INFO app.timing Pipeline stage=ingest.total latency=0.003869s success=True
+2026-11-17 14:46:37,733 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.001843s success=True
+2026-11-17 14:46:37,734 INFO app.timing Pipeline stage=ingest.total latency=0.003255s success=True
+2026-11-17 14:46:37,759 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002516s success=True
+2026-11-17 14:46:37,760 INFO app.timing Pipeline stage=ingest.total latency=0.004198s success=True
+2026-11-17 14:46:37,813 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002718s success=True
+2026-11-17 14:46:37,814 INFO app.timing Pipeline stage=ingest.total latency=0.003932s success=True
+2026-11-17 14:46:37,844 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002349s success=True
+2026-11-17 14:46:37,845 INFO app.timing Pipeline stage=ingest.total latency=0.003750s success=True
+2026-11-17 14:46:37,881 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002548s success=True
+2026-11-17 14:46:37,882 INFO app.timing Pipeline stage=ingest.total latency=0.003918s success=True
+2026-11-17 14:46:37,914 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003502s success=True
+2026-11-17 14:46:37,916 INFO app.timing Pipeline stage=ingest.total latency=0.005329s success=True
+2026-11-17 14:46:37,938 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.002061s success=True
+2026-11-17 14:46:37,939 INFO app.timing Pipeline stage=ingest.total latency=0.004003s success=True
+2026-11-17 14:46:37,998 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.001906s success=True
+2026-11-17 14:46:37,999 INFO app.timing Pipeline stage=ingest.total latency=0.003313s success=True
+2026-11-17 14:46:38,014 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.001787s success=True
+2026-11-17 14:46:38,015 INFO app.timing Pipeline stage=ingest.total latency=0.003053s success=True
+2026-11-17 14:46:38,040 INFO app.timing Pipeline stage=ingest.duplicate_check latency=0.003296s success=True
+2026-11-17 14:46:38,042 INFO app.timing Pipeline stage=ingest.total latency=0.005234s success=True
+2026-11-17 14:47:06,505 INFO app.services.llm_service LLM call prompt_tokens=947 latency=27.34s tokens_per_second=11.45
+2026-11-17 14:47:07,088 INFO app.timing Pipeline stage=screening.jd_embed latency=0.582000s success=True
+2026-11-17 14:47:07,100 INFO app.timing Pipeline stage=screening.jd_parse latency=27.954798s success=True
+2026-11-17 14:47:07,202 INFO app.timing Pipeline stage=screening.retrieve latency=0.100606s success=True
+2026-11-17 14:47:07,207 INFO app.timing Pipeline stage=candidate.filter latency=0.000034s success=True
+2026-11-17 14:47:07,211 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.003937s success=True
+2026-11-17 14:47:07,213 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001793s success=True
+2026-11-17 14:47:07,213 INFO app.timing Pipeline stage=candidate.prepare latency=0.005956s success=True
+2026-11-17 14:47:09,374 INFO app.timing Pipeline stage=output.read latency=0.004292s success=True
+2026-11-17 14:47:12,437 INFO app.timing Pipeline stage=output.read latency=0.004537s success=True
+2026-11-17 14:47:15,465 INFO app.timing Pipeline stage=output.read latency=0.003042s success=True
+2026-11-17 14:47:18,483 INFO app.timing Pipeline stage=output.read latency=0.002974s success=True
+2026-11-17 14:47:21,512 INFO app.timing Pipeline stage=output.read latency=0.004324s success=True
+2026-11-17 14:47:24,530 INFO app.timing Pipeline stage=output.read latency=0.003989s success=True
+2026-11-17 14:47:27,568 INFO app.timing Pipeline stage=output.read latency=0.003992s success=True
+2026-11-17 14:47:30,608 INFO app.timing Pipeline stage=output.read latency=0.002709s success=True
+2026-11-17 14:47:33,649 INFO app.timing Pipeline stage=output.read latency=0.005058s success=True
+2026-11-17 14:47:36,708 INFO app.timing Pipeline stage=output.read latency=0.004419s success=True
+2026-11-17 14:47:39,742 INFO app.timing Pipeline stage=output.read latency=0.006338s success=True
+2026-11-17 14:47:40,884 INFO app.services.llm_service LLM call prompt_tokens=1356 latency=33.66s tokens_per_second=14.23
+2026-11-17 14:47:40,885 INFO app.timing Pipeline stage=candidate.evaluate latency=33.671182s success=True
+2026-11-17 14:47:40,886 INFO app.timing Pipeline stage=candidate.verify latency=0.000933s success=True
+2026-11-17 14:47:40,895 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=e670dbfe-ace3-45c3-b336-7539a7a104dd
+2026-11-17 14:47:40,895 INFO app.timing Pipeline stage=candidate.save latency=0.008488s success=True
+2026-11-17 14:47:40,896 INFO app.timing Pipeline stage=candidate.filter latency=0.000036s success=True
+2026-11-17 14:47:40,901 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004608s success=True
+2026-11-17 14:47:40,902 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000562s success=True
+2026-11-17 14:47:40,902 INFO app.timing Pipeline stage=candidate.prepare latency=0.005361s success=True
+2026-11-17 14:47:42,803 INFO app.timing Pipeline stage=output.read latency=0.005982s success=True
+2026-11-17 14:47:45,844 INFO app.timing Pipeline stage=output.read latency=0.003651s success=True
+2026-11-17 14:47:48,881 INFO app.timing Pipeline stage=output.read latency=0.003955s success=True
+2026-11-17 14:47:51,921 INFO app.timing Pipeline stage=output.read latency=0.004151s success=True
+2026-11-17 14:47:54,977 INFO app.timing Pipeline stage=output.read latency=0.005282s success=True
+2026-11-17 14:47:57,997 INFO app.timing Pipeline stage=output.read latency=0.004228s success=True
+2026-11-17 14:48:01,035 INFO app.timing Pipeline stage=output.read latency=0.003290s success=True
+2026-11-17 14:48:04,067 INFO app.timing Pipeline stage=output.read latency=0.002872s success=True
+2026-11-17 14:48:07,085 INFO app.timing Pipeline stage=output.read latency=0.003574s success=True
+2026-11-17 14:48:10,118 INFO app.timing Pipeline stage=output.read latency=0.004151s success=True
+2026-11-17 14:48:13,154 INFO app.timing Pipeline stage=output.read latency=0.004642s success=True
+2026-11-17 14:48:14,042 INFO app.services.llm_service LLM call prompt_tokens=1118 latency=33.12s tokens_per_second=15.91
+2026-11-17 14:48:14,042 INFO app.timing Pipeline stage=candidate.evaluate latency=33.139308s success=True
+2026-11-17 14:48:14,043 INFO app.timing Pipeline stage=candidate.verify latency=0.000554s success=True
+2026-11-17 14:48:14,051 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=df309ea7-7fab-408d-a9ea-56cac0ee15f6
+2026-11-17 14:48:14,052 INFO app.timing Pipeline stage=candidate.save latency=0.008166s success=True
+2026-11-17 14:48:14,052 INFO app.timing Pipeline stage=candidate.filter latency=0.000023s success=True
+2026-11-17 14:48:14,058 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004872s success=True
+2026-11-17 14:48:14,058 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000566s success=True
+2026-11-17 14:48:14,058 INFO app.timing Pipeline stage=candidate.prepare latency=0.005672s success=True
+2026-11-17 14:48:16,172 INFO app.timing Pipeline stage=output.read latency=0.003616s success=True
+2026-11-17 14:48:19,202 INFO app.timing Pipeline stage=output.read latency=0.003522s success=True
+2026-11-17 14:48:22,247 INFO app.timing Pipeline stage=output.read latency=0.005386s success=True
+2026-11-17 14:48:25,285 INFO app.timing Pipeline stage=output.read latency=0.003695s success=True
+2026-11-17 14:48:28,352 INFO app.timing Pipeline stage=output.read latency=0.004066s success=True
+2026-11-17 14:48:31,391 INFO app.timing Pipeline stage=output.read latency=0.003521s success=True
+2026-11-17 14:48:34,422 INFO app.timing Pipeline stage=output.read latency=0.004050s success=True
+2026-11-17 14:48:37,442 INFO app.timing Pipeline stage=output.read latency=0.004144s success=True
+2026-11-17 14:48:40,481 INFO app.timing Pipeline stage=output.read latency=0.005012s success=True
+2026-11-17 14:48:41,118 INFO app.services.llm_service LLM call prompt_tokens=1185 latency=27.05s tokens_per_second=17.04
+2026-11-17 14:48:41,119 INFO app.timing Pipeline stage=candidate.evaluate latency=27.060215s success=True
+2026-11-17 14:48:41,120 INFO app.timing Pipeline stage=candidate.verify latency=0.000517s success=True
+2026-11-17 14:48:41,129 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=f5a14d8a-82ce-4563-b52b-efc07e549275
+2026-11-17 14:48:41,129 INFO app.timing Pipeline stage=candidate.save latency=0.008624s success=True
+2026-11-17 14:48:41,130 INFO app.timing Pipeline stage=candidate.filter latency=0.000022s success=True
+2026-11-17 14:48:41,134 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004223s success=True
+2026-11-17 14:48:41,135 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000836s success=True
+2026-11-17 14:48:41,135 INFO app.timing Pipeline stage=candidate.prepare latency=0.005269s success=True
+2026-11-17 14:48:43,526 INFO app.timing Pipeline stage=output.read latency=0.004979s success=True
+2026-11-17 14:48:46,543 INFO app.timing Pipeline stage=output.read latency=0.003326s success=True
+2026-11-17 14:48:49,563 INFO app.timing Pipeline stage=output.read latency=0.003548s success=True
+2026-11-17 14:48:52,608 INFO app.timing Pipeline stage=output.read latency=0.005233s success=True
+2026-11-17 14:48:55,645 INFO app.timing Pipeline stage=output.read latency=0.006293s success=True
+2026-11-17 14:48:58,665 INFO app.timing Pipeline stage=output.read latency=0.003221s success=True
+2026-11-17 14:49:01,686 INFO app.timing Pipeline stage=output.read latency=0.004829s success=True
+2026-11-17 14:49:04,723 INFO app.timing Pipeline stage=output.read latency=0.002758s success=True
+2026-11-17 14:49:06,843 INFO app.services.llm_service LLM call prompt_tokens=1243 latency=25.70s tokens_per_second=17.27
+2026-11-17 14:49:06,843 INFO app.timing Pipeline stage=candidate.evaluate latency=25.707202s success=True
+2026-11-17 14:49:06,844 INFO app.timing Pipeline stage=candidate.verify latency=0.000617s success=True
+2026-11-17 14:49:06,849 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=792b0170-46f4-4eaf-ab54-05ed556b6f64
+2026-11-17 14:49:06,849 INFO app.timing Pipeline stage=candidate.save latency=0.004339s success=True
+2026-11-17 14:49:06,850 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:49:06,854 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004001s success=True
+2026-11-17 14:49:06,855 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000729s success=True
+2026-11-17 14:49:06,855 INFO app.timing Pipeline stage=candidate.prepare latency=0.004971s success=True
+2026-11-17 14:49:07,755 INFO app.timing Pipeline stage=output.read latency=0.004925s success=True
+2026-11-17 14:49:10,801 INFO app.timing Pipeline stage=output.read latency=0.005131s success=True
+2026-11-17 14:49:13,837 INFO app.timing Pipeline stage=output.read latency=0.004812s success=True
+2026-11-17 14:49:16,855 INFO app.timing Pipeline stage=output.read latency=0.002994s success=True
+2026-11-17 14:49:19,919 INFO app.timing Pipeline stage=output.read latency=0.003592s success=True
+2026-11-17 14:49:22,955 INFO app.timing Pipeline stage=output.read latency=0.005090s success=True
+2026-11-17 14:49:26,014 INFO app.timing Pipeline stage=output.read latency=0.004600s success=True
+2026-11-17 14:49:29,032 INFO app.timing Pipeline stage=output.read latency=0.003092s success=True
+2026-11-17 14:49:29,144 INFO app.services.llm_service LLM call prompt_tokens=1171 latency=22.28s tokens_per_second=17.82
+2026-11-17 14:49:29,145 INFO app.timing Pipeline stage=candidate.evaluate latency=22.290107s success=True
+2026-11-17 14:49:29,147 INFO app.timing Pipeline stage=candidate.verify latency=0.000505s success=True
+2026-11-17 14:49:29,152 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=cb213a94-8f35-4156-a69e-25980bbff35a
+2026-11-17 14:49:29,152 INFO app.timing Pipeline stage=candidate.save latency=0.004568s success=True
+2026-11-17 14:49:29,152 INFO app.timing Pipeline stage=candidate.filter latency=0.000023s success=True
+2026-11-17 14:49:29,156 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.003332s success=True
+2026-11-17 14:49:29,157 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001005s success=True
+2026-11-17 14:49:29,157 INFO app.timing Pipeline stage=candidate.prepare latency=0.004578s success=True
+2026-11-17 14:49:32,081 INFO app.timing Pipeline stage=output.read latency=0.007649s success=True
+2026-11-17 14:49:35,114 INFO app.timing Pipeline stage=output.read latency=0.003854s success=True
+2026-11-17 14:49:38,133 INFO app.timing Pipeline stage=output.read latency=0.003196s success=True
+2026-11-17 14:49:41,173 INFO app.timing Pipeline stage=output.read latency=0.004497s success=True
+2026-11-17 14:49:44,260 INFO app.timing Pipeline stage=output.read latency=0.002860s success=True
+2026-11-17 14:49:47,278 INFO app.timing Pipeline stage=output.read latency=0.002979s success=True
+2026-11-17 14:49:50,343 INFO app.timing Pipeline stage=output.read latency=0.004280s success=True
+2026-11-17 14:49:53,364 INFO app.timing Pipeline stage=output.read latency=0.004666s success=True
+2026-11-17 14:49:56,419 INFO app.timing Pipeline stage=output.read latency=0.003619s success=True
+2026-11-17 14:49:59,438 INFO app.timing Pipeline stage=output.read latency=0.003952s success=True
+2026-11-17 14:50:02,443 INFO app.services.llm_service LLM call prompt_tokens=1513 latency=33.28s tokens_per_second=16.05
+2026-11-17 14:50:02,443 INFO app.timing Pipeline stage=candidate.evaluate latency=33.285974s success=True
+2026-11-17 14:50:02,445 INFO app.timing Pipeline stage=candidate.verify latency=0.000773s success=True
+2026-11-17 14:50:02,455 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=5eb4d019-48a9-4185-adba-ce46a02c031e
+2026-11-17 14:50:02,455 INFO app.timing Pipeline stage=candidate.save latency=0.009488s success=True
+2026-11-17 14:50:02,456 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:50:02,462 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.005827s success=True
+2026-11-17 14:50:02,463 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001050s success=True
+2026-11-17 14:50:02,464 INFO app.timing Pipeline stage=candidate.prepare latency=0.007192s success=True
+2026-11-17 14:50:02,489 INFO app.timing Pipeline stage=output.read latency=0.005353s success=True
+2026-11-17 14:50:05,549 INFO app.timing Pipeline stage=output.read latency=0.008070s success=True
+2026-11-17 14:50:08,569 INFO app.timing Pipeline stage=output.read latency=0.004728s success=True
+2026-11-17 14:50:11,602 INFO app.timing Pipeline stage=output.read latency=0.004398s success=True
+2026-11-17 14:50:14,636 INFO app.timing Pipeline stage=output.read latency=0.005689s success=True
+2026-11-17 14:50:17,678 INFO app.timing Pipeline stage=output.read latency=0.003336s success=True
+2026-11-17 14:50:20,717 INFO app.timing Pipeline stage=output.read latency=0.004716s success=True
+2026-11-17 14:50:23,748 INFO app.timing Pipeline stage=output.read latency=0.005363s success=True
+2026-11-17 14:50:26,788 INFO app.timing Pipeline stage=output.read latency=0.003646s success=True
+2026-11-17 14:50:29,603 INFO app.services.llm_service LLM call prompt_tokens=1498 latency=27.12s tokens_per_second=16.33
+2026-11-17 14:50:29,604 INFO app.timing Pipeline stage=candidate.evaluate latency=27.140258s success=True
+2026-11-17 14:50:29,605 INFO app.timing Pipeline stage=candidate.verify latency=0.000809s success=True
+2026-11-17 14:50:29,613 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=73eb17d2-94f7-470a-ad16-2ef566a15b7d
+2026-11-17 14:50:29,613 INFO app.timing Pipeline stage=candidate.save latency=0.008217s success=True
+2026-11-17 14:50:29,614 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:50:29,620 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.005803s success=True
+2026-11-17 14:50:29,621 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000659s success=True
+2026-11-17 14:50:29,621 INFO app.timing Pipeline stage=candidate.prepare latency=0.006693s success=True
+2026-11-17 14:50:29,849 INFO app.timing Pipeline stage=output.read latency=0.006508s success=True
+2026-11-17 14:50:32,889 INFO app.timing Pipeline stage=output.read latency=0.003822s success=True
+2026-11-17 14:50:35,924 INFO app.timing Pipeline stage=output.read latency=0.004886s success=True
+2026-11-17 14:50:38,956 INFO app.timing Pipeline stage=output.read latency=0.004037s success=True
+2026-11-17 14:50:41,973 INFO app.timing Pipeline stage=output.read latency=0.003099s success=True
+2026-11-17 14:50:45,005 INFO app.timing Pipeline stage=output.read latency=0.003087s success=True
+2026-11-17 14:50:48,060 INFO app.timing Pipeline stage=output.read latency=0.003501s success=True
+2026-11-17 14:50:50,533 INFO app.services.llm_service LLM call prompt_tokens=1071 latency=20.91s tokens_per_second=18.22
+2026-11-17 14:50:50,533 INFO app.timing Pipeline stage=candidate.evaluate latency=20.910513s success=True
+2026-11-17 14:50:50,534 INFO app.timing Pipeline stage=candidate.verify latency=0.000452s success=True
+2026-11-17 14:50:50,543 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=47454ad6-d7ba-4b64-8978-ce7d27d2b228
+2026-11-17 14:50:50,544 INFO app.timing Pipeline stage=candidate.save latency=0.009422s success=True
+2026-11-17 14:50:50,544 INFO app.timing Pipeline stage=candidate.filter latency=0.000022s success=True
+2026-11-17 14:50:50,549 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004528s success=True
+2026-11-17 14:50:50,550 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000756s success=True
+2026-11-17 14:50:50,550 INFO app.timing Pipeline stage=candidate.prepare latency=0.005488s success=True
+2026-11-17 14:50:51,104 INFO app.timing Pipeline stage=output.read latency=0.004369s success=True
+2026-11-17 14:50:54,128 INFO app.timing Pipeline stage=output.read latency=0.005294s success=True
+2026-11-17 14:50:57,163 INFO app.timing Pipeline stage=output.read latency=0.004963s success=True
+2026-11-17 14:51:00,187 INFO app.timing Pipeline stage=output.read latency=0.004756s success=True
+2026-11-17 14:51:03,210 INFO app.timing Pipeline stage=output.read latency=0.005388s success=True
+2026-11-17 14:51:06,259 INFO app.timing Pipeline stage=output.read latency=0.005280s success=True
+2026-11-17 14:51:09,297 INFO app.timing Pipeline stage=output.read latency=0.004952s success=True
+2026-11-17 14:51:12,326 INFO app.timing Pipeline stage=output.read latency=0.005991s success=True
+2026-11-17 14:51:15,367 INFO app.timing Pipeline stage=output.read latency=0.005099s success=True
+2026-11-17 14:51:18,388 INFO app.timing Pipeline stage=output.read latency=0.003983s success=True
+2026-11-17 14:51:21,216 INFO app.services.llm_service LLM call prompt_tokens=1360 latency=30.66s tokens_per_second=15.53
+2026-11-17 14:51:21,216 INFO app.timing Pipeline stage=candidate.evaluate latency=30.665017s success=True
+2026-11-17 14:51:21,217 INFO app.timing Pipeline stage=candidate.verify latency=0.000588s success=True
+2026-11-17 14:51:21,224 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=24b49e18-2a94-45b3-87e0-889996d6b01a
+2026-11-17 14:51:21,224 INFO app.timing Pipeline stage=candidate.save latency=0.007426s success=True
+2026-11-17 14:51:21,226 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:51:21,229 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004464s success=True
+2026-11-17 14:51:21,231 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001049s success=True
+2026-11-17 14:51:21,232 INFO app.timing Pipeline stage=candidate.prepare latency=0.005756s success=True
+2026-11-17 14:51:21,434 INFO app.timing Pipeline stage=output.read latency=0.004773s success=True
+2026-11-17 14:51:24,496 INFO app.timing Pipeline stage=output.read latency=0.004971s success=True
+2026-11-17 14:51:27,543 INFO app.timing Pipeline stage=output.read latency=0.005455s success=True
+2026-11-17 14:51:30,572 INFO app.timing Pipeline stage=output.read latency=0.003364s success=True
+2026-11-17 14:51:33,613 INFO app.timing Pipeline stage=output.read latency=0.003165s success=True
+2026-11-17 14:51:36,644 INFO app.timing Pipeline stage=output.read latency=0.003243s success=True
+2026-11-17 14:51:39,711 INFO app.timing Pipeline stage=output.read latency=0.004284s success=True
+2026-11-17 14:51:42,733 INFO app.timing Pipeline stage=output.read latency=0.004533s success=True
+2026-11-17 14:51:45,758 INFO app.timing Pipeline stage=output.read latency=0.005509s success=True
+2026-11-17 14:51:47,205 INFO app.services.llm_service LLM call prompt_tokens=1329 latency=25.97s tokens_per_second=16.37
+2026-11-17 14:51:47,205 INFO app.timing Pipeline stage=candidate.evaluate latency=25.973912s success=True
+2026-11-17 14:51:47,207 INFO app.timing Pipeline stage=candidate.verify latency=0.000926s success=True
+2026-11-17 14:51:47,214 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=20c2a20e-3a83-48ae-a9e8-e17a3757e3f3
+2026-11-17 14:51:47,214 INFO app.timing Pipeline stage=candidate.save latency=0.007257s success=True
+2026-11-17 14:51:47,215 INFO app.timing Pipeline stage=candidate.filter latency=0.000028s success=True
+2026-11-17 14:51:47,220 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004333s success=True
+2026-11-17 14:51:47,221 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001303s success=True
+2026-11-17 14:51:47,222 INFO app.timing Pipeline stage=candidate.prepare latency=0.005949s success=True
+2026-11-17 14:51:48,829 INFO app.timing Pipeline stage=output.read latency=0.026481s success=True
+2026-11-17 14:51:51,854 INFO app.timing Pipeline stage=output.read latency=0.003642s success=True
+2026-11-17 14:51:54,900 INFO app.timing Pipeline stage=output.read latency=0.004495s success=True
+2026-11-17 14:51:57,970 INFO app.timing Pipeline stage=output.read latency=0.005138s success=True
+2026-11-17 14:52:00,990 INFO app.timing Pipeline stage=output.read latency=0.003449s success=True
+2026-11-17 14:52:04,020 INFO app.timing Pipeline stage=output.read latency=0.003497s success=True
+2026-11-17 14:52:07,060 INFO app.timing Pipeline stage=output.read latency=0.003851s success=True
+2026-11-17 14:52:10,120 INFO app.timing Pipeline stage=output.read latency=0.005684s success=True
+2026-11-17 14:52:13,189 INFO app.timing Pipeline stage=output.read latency=0.005875s success=True
+2026-11-17 14:52:16,230 INFO app.timing Pipeline stage=output.read latency=0.005948s success=True
+2026-11-17 14:52:17,061 INFO app.services.llm_service LLM call prompt_tokens=1399 latency=29.84s tokens_per_second=15.98
+2026-11-17 14:52:17,061 INFO app.timing Pipeline stage=candidate.evaluate latency=29.839318s success=True
+2026-11-17 14:52:17,063 INFO app.timing Pipeline stage=candidate.verify latency=0.000662s success=True
+2026-11-17 14:52:17,070 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=c3570cb0-f2c4-4f30-a420-8aa5446b93c0
+2026-11-17 14:52:17,070 INFO app.timing Pipeline stage=candidate.save latency=0.007295s success=True
+2026-11-17 14:52:17,072 INFO app.timing Pipeline stage=candidate.filter latency=0.000026s success=True
+2026-11-17 14:52:17,076 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004987s success=True
+2026-11-17 14:52:17,077 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001019s success=True
+2026-11-17 14:52:17,079 INFO app.timing Pipeline stage=candidate.prepare latency=0.006198s success=True
+2026-11-17 14:52:19,269 INFO app.timing Pipeline stage=output.read latency=0.004421s success=True
+2026-11-17 14:52:22,302 INFO app.timing Pipeline stage=output.read latency=0.004472s success=True
+2026-11-17 14:52:25,359 INFO app.timing Pipeline stage=output.read latency=0.005622s success=True
+2026-11-17 14:52:28,390 INFO app.timing Pipeline stage=output.read latency=0.003344s success=True
+2026-11-17 14:52:31,455 INFO app.timing Pipeline stage=output.read latency=0.004750s success=True
+2026-11-17 14:52:34,474 INFO app.timing Pipeline stage=output.read latency=0.003594s success=True
+2026-11-17 14:52:37,519 INFO app.timing Pipeline stage=output.read latency=0.004251s success=True
+2026-11-17 14:52:40,563 INFO app.timing Pipeline stage=output.read latency=0.005777s success=True
+2026-11-17 14:52:43,605 INFO app.timing Pipeline stage=output.read latency=0.003677s success=True
+2026-11-17 14:52:44,766 INFO app.services.llm_service LLM call prompt_tokens=1568 latency=27.69s tokens_per_second=15.60
+2026-11-17 14:52:44,766 INFO app.timing Pipeline stage=candidate.evaluate latency=27.688164s success=True
+2026-11-17 14:52:44,768 INFO app.timing Pipeline stage=candidate.verify latency=0.000975s success=True
+2026-11-17 14:52:44,775 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=d6a8acc4-84bf-4374-99e6-4d53268cd785
+2026-11-17 14:52:44,775 INFO app.timing Pipeline stage=candidate.save latency=0.007245s success=True
+2026-11-17 14:52:44,776 INFO app.timing Pipeline stage=candidate.filter latency=0.000023s success=True
+2026-11-17 14:52:44,782 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004637s success=True
+2026-11-17 14:52:44,782 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000960s success=True
+2026-11-17 14:52:44,782 INFO app.timing Pipeline stage=candidate.prepare latency=0.005802s success=True
+2026-11-17 14:52:46,627 INFO app.timing Pipeline stage=output.read latency=0.003927s success=True
+2026-11-17 14:52:49,647 INFO app.timing Pipeline stage=output.read latency=0.003422s success=True
+2026-11-17 14:52:52,695 INFO app.timing Pipeline stage=output.read latency=0.004556s success=True
+2026-11-17 14:52:55,739 INFO app.timing Pipeline stage=output.read latency=0.003650s success=True
+2026-11-17 14:52:58,780 INFO app.timing Pipeline stage=output.read latency=0.006320s success=True
+2026-11-17 14:53:01,817 INFO app.timing Pipeline stage=output.read latency=0.003478s success=True
+2026-11-17 14:53:04,840 INFO app.timing Pipeline stage=output.read latency=0.005183s success=True
+2026-11-17 14:53:06,420 INFO app.services.llm_service LLM call prompt_tokens=1412 latency=21.64s tokens_per_second=16.77
+2026-11-17 14:53:06,420 INFO app.timing Pipeline stage=candidate.evaluate latency=21.637093s success=True
+2026-11-17 14:53:06,422 INFO app.timing Pipeline stage=candidate.verify latency=0.000712s success=True
+2026-11-17 14:53:06,431 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=8685fda7-504f-43cb-ad4c-ebd72d95a437
+2026-11-17 14:53:06,431 INFO app.timing Pipeline stage=candidate.save latency=0.008719s success=True
+2026-11-17 14:53:06,433 INFO app.timing Pipeline stage=candidate.filter latency=0.000044s success=True
+2026-11-17 14:53:06,438 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.005180s success=True
+2026-11-17 14:53:06,440 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001183s success=True
+2026-11-17 14:53:06,440 INFO app.timing Pipeline stage=candidate.prepare latency=0.006577s success=True
+2026-11-17 14:53:07,888 INFO app.timing Pipeline stage=output.read latency=0.004977s success=True
+2026-11-17 14:53:10,947 INFO app.timing Pipeline stage=output.read latency=0.006959s success=True
+2026-11-17 14:53:13,968 INFO app.timing Pipeline stage=output.read latency=0.004093s success=True
+2026-11-17 14:53:17,012 INFO app.timing Pipeline stage=output.read latency=0.003336s success=True
+2026-11-17 14:53:20,058 INFO app.timing Pipeline stage=output.read latency=0.004205s success=True
+2026-11-17 14:53:23,088 INFO app.timing Pipeline stage=output.read latency=0.003357s success=True
+2026-11-17 14:53:26,108 INFO app.timing Pipeline stage=output.read latency=0.003556s success=True
+2026-11-17 14:53:29,131 INFO app.timing Pipeline stage=output.read latency=0.003886s success=True
+2026-11-17 14:53:32,163 INFO app.timing Pipeline stage=output.read latency=0.003755s success=True
+2026-11-17 14:53:35,206 INFO app.timing Pipeline stage=output.read latency=0.003999s success=True
+2026-11-17 14:53:38,231 INFO app.timing Pipeline stage=output.read latency=0.005927s success=True
+2026-11-17 14:53:39,716 INFO app.services.llm_service LLM call prompt_tokens=1652 latency=33.27s tokens_per_second=15.30
+2026-11-17 14:53:39,716 INFO app.timing Pipeline stage=candidate.evaluate latency=33.275704s success=True
+2026-11-17 14:53:39,718 INFO app.timing Pipeline stage=candidate.verify latency=0.001609s success=True
+2026-11-17 14:53:39,725 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=c6329351-7575-4c42-8675-f08391172759
+2026-11-17 14:53:39,725 INFO app.timing Pipeline stage=candidate.save latency=0.007822s success=True
+2026-11-17 14:53:39,727 INFO app.timing Pipeline stage=candidate.filter latency=0.000036s success=True
+2026-11-17 14:53:39,731 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004344s success=True
+2026-11-17 14:53:39,732 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000898s success=True
+2026-11-17 14:53:39,732 INFO app.timing Pipeline stage=candidate.prepare latency=0.005442s success=True
+2026-11-17 14:53:41,271 INFO app.timing Pipeline stage=output.read latency=0.005561s success=True
+2026-11-17 14:53:44,295 INFO app.timing Pipeline stage=output.read latency=0.003642s success=True
+2026-11-17 14:53:47,356 INFO app.timing Pipeline stage=output.read latency=0.006617s success=True
+2026-11-17 14:53:50,393 INFO app.timing Pipeline stage=output.read latency=0.004670s success=True
+2026-11-17 14:53:53,411 INFO app.timing Pipeline stage=output.read latency=0.003491s success=True
+2026-11-17 14:53:56,457 INFO app.timing Pipeline stage=output.read latency=0.003444s success=True
+2026-11-17 14:53:59,478 INFO app.timing Pipeline stage=output.read latency=0.003885s success=True
+2026-11-17 14:54:02,527 INFO app.timing Pipeline stage=output.read latency=0.005181s success=True
+2026-11-17 14:54:05,567 INFO app.timing Pipeline stage=output.read latency=0.004083s success=True
+2026-11-17 14:54:08,614 INFO app.timing Pipeline stage=output.read latency=0.003813s success=True
+2026-11-17 14:54:11,637 INFO app.timing Pipeline stage=output.read latency=0.004709s success=True
+2026-11-17 14:54:12,384 INFO app.services.llm_service LLM call prompt_tokens=1419 latency=32.64s tokens_per_second=16.08
+2026-11-17 14:54:12,384 INFO app.timing Pipeline stage=candidate.evaluate latency=32.651821s success=True
+2026-11-17 14:54:12,387 INFO app.timing Pipeline stage=candidate.verify latency=0.000773s success=True
+2026-11-17 14:54:12,394 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=39007b1f-1108-430c-b8eb-df801cd4e696
+2026-11-17 14:54:12,394 INFO app.timing Pipeline stage=candidate.save latency=0.007482s success=True
+2026-11-17 14:54:12,395 INFO app.timing Pipeline stage=candidate.filter latency=0.000025s success=True
+2026-11-17 14:54:12,399 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004120s success=True
+2026-11-17 14:54:12,400 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001049s success=True
+2026-11-17 14:54:12,400 INFO app.timing Pipeline stage=candidate.prepare latency=0.005404s success=True
+2026-11-17 14:54:14,669 INFO app.timing Pipeline stage=output.read latency=0.004342s success=True
+2026-11-17 14:54:17,708 INFO app.timing Pipeline stage=output.read latency=0.003965s success=True
+2026-11-17 14:54:20,752 INFO app.timing Pipeline stage=output.read latency=0.003790s success=True
+2026-11-17 14:54:23,799 INFO app.timing Pipeline stage=output.read latency=0.005538s success=True
+2026-11-17 14:54:26,856 INFO app.timing Pipeline stage=output.read latency=0.004132s success=True
+2026-11-17 14:54:29,899 INFO app.timing Pipeline stage=output.read latency=0.004596s success=True
+2026-11-17 14:54:32,945 INFO app.timing Pipeline stage=output.read latency=0.005486s success=True
+2026-11-17 14:54:35,995 INFO app.timing Pipeline stage=output.read latency=0.003904s success=True
+2026-11-17 14:54:38,985 INFO app.services.llm_service LLM call prompt_tokens=1443 latency=26.58s tokens_per_second=16.03
+2026-11-17 14:54:38,986 INFO app.timing Pipeline stage=candidate.evaluate latency=26.584322s success=True
+2026-11-17 14:54:38,987 INFO app.timing Pipeline stage=candidate.verify latency=0.000789s success=True
+2026-11-17 14:54:38,995 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=a6d6193e-cb6a-419e-ae43-47887ae58aa4
+2026-11-17 14:54:38,995 INFO app.timing Pipeline stage=candidate.save latency=0.007898s success=True
+2026-11-17 14:54:38,996 INFO app.timing Pipeline stage=candidate.filter latency=0.000023s success=True
+2026-11-17 14:54:39,001 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004238s success=True
+2026-11-17 14:54:39,001 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000721s success=True
+2026-11-17 14:54:39,001 INFO app.timing Pipeline stage=candidate.prepare latency=0.005156s success=True
+2026-11-17 14:54:39,018 INFO app.timing Pipeline stage=output.read latency=0.003856s success=True
+2026-11-17 14:54:42,079 INFO app.timing Pipeline stage=output.read latency=0.005230s success=True
+2026-11-17 14:54:45,113 INFO app.timing Pipeline stage=output.read latency=0.004451s success=True
+2026-11-17 14:54:48,172 INFO app.timing Pipeline stage=output.read latency=0.005226s success=True
+2026-11-17 14:54:51,208 INFO app.timing Pipeline stage=output.read latency=0.005922s success=True
+2026-11-17 14:54:54,304 INFO app.timing Pipeline stage=output.read latency=0.005491s success=True
+2026-11-17 14:54:57,326 INFO app.timing Pipeline stage=output.read latency=0.003978s success=True
+2026-11-17 14:55:00,359 INFO app.timing Pipeline stage=output.read latency=0.004420s success=True
+2026-11-17 14:55:03,382 INFO app.timing Pipeline stage=output.read latency=0.004117s success=True
+2026-11-17 14:55:03,809 INFO app.services.llm_service LLM call prompt_tokens=1218 latency=24.80s tokens_per_second=16.74
+2026-11-17 14:55:03,809 INFO app.timing Pipeline stage=candidate.evaluate latency=24.807398s success=True
+2026-11-17 14:55:03,810 INFO app.timing Pipeline stage=candidate.verify latency=0.000467s success=True
+2026-11-17 14:55:03,817 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=a411b476-1ec3-4d0e-a960-344d90d6903a
+2026-11-17 14:55:03,817 INFO app.timing Pipeline stage=candidate.save latency=0.007241s success=True
+2026-11-17 14:55:03,818 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:55:03,823 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004681s success=True
+2026-11-17 14:55:03,825 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001193s success=True
+2026-11-17 14:55:03,825 INFO app.timing Pipeline stage=candidate.prepare latency=0.006154s success=True
+2026-11-17 14:55:06,426 INFO app.timing Pipeline stage=output.read latency=0.003550s success=True
+2026-11-17 14:55:09,463 INFO app.timing Pipeline stage=output.read latency=0.005232s success=True
+2026-11-17 14:55:12,484 INFO app.timing Pipeline stage=output.read latency=0.003903s success=True
+2026-11-17 14:55:15,525 INFO app.timing Pipeline stage=output.read latency=0.003692s success=True
+2026-11-17 14:55:18,549 INFO app.timing Pipeline stage=output.read latency=0.005019s success=True
+2026-11-17 14:55:21,570 INFO app.timing Pipeline stage=output.read latency=0.003744s success=True
+2026-11-17 14:55:24,600 INFO app.timing Pipeline stage=output.read latency=0.004125s success=True
+2026-11-17 14:55:27,644 INFO app.timing Pipeline stage=output.read latency=0.005189s success=True
+2026-11-17 14:55:30,683 INFO app.timing Pipeline stage=output.read latency=0.004297s success=True
+2026-11-17 14:55:33,752 INFO app.timing Pipeline stage=output.read latency=0.005286s success=True
+2026-11-17 14:55:36,792 INFO app.timing Pipeline stage=output.read latency=0.005365s success=True
+2026-11-17 14:55:37,645 INFO app.services.llm_service LLM call prompt_tokens=1604 latency=33.81s tokens_per_second=15.32
+2026-11-17 14:55:37,646 INFO app.timing Pipeline stage=candidate.evaluate latency=33.820154s success=True
+2026-11-17 14:55:37,647 INFO app.timing Pipeline stage=candidate.verify latency=0.000949s success=True
+2026-11-17 14:55:37,656 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=d3b3fa9e-1926-4a28-94b6-e288544b8149
+2026-11-17 14:55:37,656 INFO app.timing Pipeline stage=candidate.save latency=0.008614s success=True
+2026-11-17 14:55:37,657 INFO app.timing Pipeline stage=candidate.filter latency=0.000024s success=True
+2026-11-17 14:55:37,661 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.003676s success=True
+2026-11-17 14:55:37,662 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001038s success=True
+2026-11-17 14:55:37,662 INFO app.timing Pipeline stage=candidate.prepare latency=0.004938s success=True
+2026-11-17 14:55:39,859 INFO app.timing Pipeline stage=output.read latency=0.005308s success=True
+2026-11-17 14:55:42,881 INFO app.timing Pipeline stage=output.read latency=0.004301s success=True
+2026-11-17 14:55:45,926 INFO app.timing Pipeline stage=output.read latency=0.004619s success=True
+2026-11-17 14:55:48,965 INFO app.timing Pipeline stage=output.read latency=0.004484s success=True
+2026-11-17 14:55:51,988 INFO app.timing Pipeline stage=output.read latency=0.003950s success=True
+2026-11-17 14:55:55,057 INFO app.timing Pipeline stage=output.read latency=0.004213s success=True
+2026-11-17 14:55:58,083 INFO app.timing Pipeline stage=output.read latency=0.005826s success=True
+2026-11-17 14:56:01,105 INFO app.timing Pipeline stage=output.read latency=0.003835s success=True
+2026-11-17 14:56:04,151 INFO app.timing Pipeline stage=output.read latency=0.004533s success=True
+2026-11-17 14:56:06,861 INFO app.services.llm_service LLM call prompt_tokens=1516 latency=29.20s tokens_per_second=15.41
+2026-11-17 14:56:06,861 INFO app.timing Pipeline stage=candidate.evaluate latency=29.198562s success=True
+2026-11-17 14:56:06,862 INFO app.timing Pipeline stage=candidate.verify latency=0.000744s success=True
+2026-11-17 14:56:06,870 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=56916f15-d482-418c-8731-9baad3e4911b
+2026-11-17 14:56:06,871 INFO app.timing Pipeline stage=candidate.save latency=0.007578s success=True
+2026-11-17 14:56:06,871 INFO app.timing Pipeline stage=candidate.filter latency=0.000022s success=True
+2026-11-17 14:56:06,876 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004173s success=True
+2026-11-17 14:56:06,877 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000850s success=True
+2026-11-17 14:56:06,877 INFO app.timing Pipeline stage=candidate.prepare latency=0.005231s success=True
+2026-11-17 14:56:07,216 INFO app.timing Pipeline stage=output.read latency=0.006583s success=True
+2026-11-17 14:56:10,263 INFO app.timing Pipeline stage=output.read latency=0.004996s success=True
+2026-11-17 14:56:13,319 INFO app.timing Pipeline stage=output.read latency=0.004075s success=True
+2026-11-17 14:56:16,368 INFO app.timing Pipeline stage=output.read latency=0.004461s success=True
+2026-11-17 14:56:19,457 INFO app.timing Pipeline stage=output.read latency=0.004914s success=True
+2026-11-17 14:56:22,483 INFO app.timing Pipeline stage=output.read latency=0.006164s success=True
+2026-11-17 14:56:25,520 INFO app.timing Pipeline stage=output.read latency=0.004195s success=True
+2026-11-17 14:56:28,591 INFO app.timing Pipeline stage=output.read latency=0.004309s success=True
+2026-11-17 14:56:31,659 INFO app.timing Pipeline stage=output.read latency=0.004150s success=True
+2026-11-17 14:56:33,758 INFO app.services.llm_service LLM call prompt_tokens=1423 latency=26.88s tokens_per_second=16.22
+2026-11-17 14:56:33,759 INFO app.timing Pipeline stage=candidate.evaluate latency=26.881278s success=True
+2026-11-17 14:56:33,760 INFO app.timing Pipeline stage=candidate.verify latency=0.000645s success=True
+2026-11-17 14:56:33,767 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=053ec2a2-bde7-4deb-b299-1fdae745b902
+2026-11-17 14:56:33,768 INFO app.timing Pipeline stage=candidate.save latency=0.007709s success=True
+2026-11-17 14:56:33,768 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:56:33,774 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004306s success=True
+2026-11-17 14:56:33,774 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000706s success=True
+2026-11-17 14:56:33,774 INFO app.timing Pipeline stage=candidate.prepare latency=0.005207s success=True
+2026-11-17 14:56:34,696 INFO app.timing Pipeline stage=output.read latency=0.005150s success=True
+2026-11-17 14:56:37,740 INFO app.timing Pipeline stage=output.read latency=0.004324s success=True
+2026-11-17 14:56:40,811 INFO app.timing Pipeline stage=output.read latency=0.006607s success=True
+2026-11-17 14:56:43,850 INFO app.timing Pipeline stage=output.read latency=0.003596s success=True
+2026-11-17 14:56:46,884 INFO app.timing Pipeline stage=output.read latency=0.005631s success=True
+2026-11-17 14:56:49,907 INFO app.timing Pipeline stage=output.read latency=0.004121s success=True
+2026-11-17 14:56:52,953 INFO app.timing Pipeline stage=output.read latency=0.005245s success=True
+2026-11-17 14:56:55,999 INFO app.timing Pipeline stage=output.read latency=0.005747s success=True
+2026-11-17 14:56:59,046 INFO app.timing Pipeline stage=output.read latency=0.007141s success=True
+2026-11-17 14:57:02,110 INFO app.timing Pipeline stage=output.read latency=0.004432s success=True
+2026-11-17 14:57:05,132 INFO app.timing Pipeline stage=output.read latency=0.003995s success=True
+2026-11-17 14:57:08,154 INFO app.timing Pipeline stage=output.read latency=0.003651s success=True
+2026-11-17 14:57:11,192 INFO app.timing Pipeline stage=output.read latency=0.003767s success=True
+2026-11-17 14:57:11,262 INFO app.services.llm_service LLM call prompt_tokens=1275 latency=37.48s tokens_per_second=16.09
+2026-11-17 14:57:11,262 INFO app.timing Pipeline stage=candidate.evaluate latency=37.487222s success=True
+2026-11-17 14:57:11,263 INFO app.timing Pipeline stage=candidate.verify latency=0.000751s success=True
+2026-11-17 14:57:11,273 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=f699156d-ec41-46f1-87a9-5c888084365e
+2026-11-17 14:57:11,273 INFO app.timing Pipeline stage=candidate.save latency=0.009661s success=True
+2026-11-17 14:57:11,274 INFO app.timing Pipeline stage=candidate.filter latency=0.000039s success=True
+2026-11-17 14:57:11,280 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004768s success=True
+2026-11-17 14:57:11,281 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000825s success=True
+2026-11-17 14:57:11,281 INFO app.timing Pipeline stage=candidate.prepare latency=0.005802s success=True
+2026-11-17 14:57:14,264 INFO app.timing Pipeline stage=output.read latency=0.004666s success=True
+2026-11-17 14:57:17,323 INFO app.timing Pipeline stage=output.read latency=0.004472s success=True
+2026-11-17 14:57:20,344 INFO app.timing Pipeline stage=output.read latency=0.003466s success=True
+2026-11-17 14:57:23,407 INFO app.timing Pipeline stage=output.read latency=0.005325s success=True
+2026-11-17 14:57:26,432 INFO app.timing Pipeline stage=output.read latency=0.004607s success=True
+2026-11-17 14:57:29,497 INFO app.timing Pipeline stage=output.read latency=0.004469s success=True
+2026-11-17 14:57:32,521 INFO app.timing Pipeline stage=output.read latency=0.005206s success=True
+2026-11-17 14:57:35,548 INFO app.timing Pipeline stage=output.read latency=0.004278s success=True
+2026-11-17 14:57:36,742 INFO app.services.llm_service LLM call prompt_tokens=1372 latency=25.45s tokens_per_second=16.82
+2026-11-17 14:57:36,743 INFO app.timing Pipeline stage=candidate.evaluate latency=25.461147s success=True
+2026-11-17 14:57:36,744 INFO app.timing Pipeline stage=candidate.verify latency=0.000964s success=True
+2026-11-17 14:57:36,752 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=3bf14a58-48be-4781-84cd-8952b054527a
+2026-11-17 14:57:36,752 INFO app.timing Pipeline stage=candidate.save latency=0.007669s success=True
+2026-11-17 14:57:36,753 INFO app.timing Pipeline stage=candidate.filter latency=0.000022s success=True
+2026-11-17 14:57:36,758 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004437s success=True
+2026-11-17 14:57:36,760 INFO app.timing Pipeline stage=candidate.anonymize latency=0.001719s success=True
+2026-11-17 14:57:36,760 INFO app.timing Pipeline stage=candidate.prepare latency=0.006484s success=True
+2026-11-17 14:57:38,616 INFO app.timing Pipeline stage=output.read latency=0.005043s success=True
+2026-11-17 14:57:41,658 INFO app.timing Pipeline stage=output.read latency=0.004704s success=True
+2026-11-17 14:57:44,682 INFO app.timing Pipeline stage=output.read latency=0.003787s success=True
+2026-11-17 14:57:47,741 INFO app.timing Pipeline stage=output.read latency=0.005555s success=True
+2026-11-17 14:57:50,786 INFO app.timing Pipeline stage=output.read latency=0.004437s success=True
+2026-11-17 14:57:53,836 INFO app.timing Pipeline stage=output.read latency=0.004106s success=True
+2026-11-17 14:57:56,878 INFO app.timing Pipeline stage=output.read latency=0.003552s success=True
+2026-11-17 14:57:59,950 INFO app.timing Pipeline stage=output.read latency=0.005204s success=True
+2026-11-17 14:58:02,996 INFO app.timing Pipeline stage=output.read latency=0.004359s success=True
+2026-11-17 14:58:06,019 INFO app.timing Pipeline stage=output.read latency=0.004512s success=True
+2026-11-17 14:58:09,060 INFO app.timing Pipeline stage=output.read latency=0.003913s success=True
+2026-11-17 14:58:12,109 INFO app.timing Pipeline stage=output.read latency=0.004986s success=True
+2026-11-17 14:58:15,171 INFO app.timing Pipeline stage=output.read latency=0.004905s success=True
+2026-11-17 14:58:18,218 INFO app.timing Pipeline stage=output.read latency=0.005635s success=True
+2026-11-17 14:58:21,276 INFO app.timing Pipeline stage=output.read latency=0.004578s success=True
+2026-11-17 14:58:24,310 INFO app.timing Pipeline stage=output.read latency=0.004286s success=True
+2026-11-17 14:58:24,671 INFO app.services.llm_service LLM call prompt_tokens=2006 latency=47.91s tokens_per_second=13.94
+2026-11-17 14:58:24,671 INFO app.timing Pipeline stage=candidate.evaluate latency=47.910969s success=True
+2026-11-17 14:58:24,673 INFO app.timing Pipeline stage=candidate.verify latency=0.001094s success=True
+2026-11-17 14:58:24,681 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=fff4fe1d-5007-4949-a9c4-f7ceff3e0969
+2026-11-17 14:58:24,681 INFO app.timing Pipeline stage=candidate.save latency=0.008121s success=True
+2026-11-17 14:58:24,682 INFO app.timing Pipeline stage=candidate.filter latency=0.000040s success=True
+2026-11-17 14:58:24,688 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.004704s success=True
+2026-11-17 14:58:24,689 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000986s success=True
+2026-11-17 14:58:24,689 INFO app.timing Pipeline stage=candidate.prepare latency=0.005895s success=True
+2026-11-17 14:58:27,335 INFO app.timing Pipeline stage=output.read latency=0.004792s success=True
+2026-11-17 14:58:30,384 INFO app.timing Pipeline stage=output.read latency=0.003876s success=True
+2026-11-17 14:58:33,421 INFO app.timing Pipeline stage=output.read latency=0.005205s success=True
+2026-11-17 14:58:36,481 INFO app.timing Pipeline stage=output.read latency=0.004840s success=True
+2026-11-17 14:58:39,505 INFO app.timing Pipeline stage=output.read latency=0.003572s success=True
+2026-11-17 14:58:42,532 INFO app.timing Pipeline stage=output.read latency=0.004949s success=True
+2026-11-17 14:58:45,583 INFO app.timing Pipeline stage=output.read latency=0.003569s success=True
+2026-11-17 14:58:48,626 INFO app.timing Pipeline stage=output.read latency=0.003459s success=True
+2026-11-17 14:58:51,648 INFO app.timing Pipeline stage=output.read latency=0.003597s success=True
+2026-11-17 14:58:54,717 INFO app.timing Pipeline stage=output.read latency=0.006035s success=True
+2026-11-17 14:58:56,116 INFO app.services.llm_service LLM call prompt_tokens=1529 latency=31.42s tokens_per_second=15.88
+2026-11-17 14:58:56,116 INFO app.timing Pipeline stage=candidate.evaluate latency=31.427172s success=True
+2026-11-17 14:58:56,118 INFO app.timing Pipeline stage=candidate.verify latency=0.000915s success=True
+2026-11-17 14:58:56,127 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=b0997210-8e73-4784-8ec0-528a3af1f727
+2026-11-17 14:58:56,127 INFO app.timing Pipeline stage=candidate.save latency=0.008365s success=True
+2026-11-17 14:58:56,128 INFO app.timing Pipeline stage=candidate.filter latency=0.000021s success=True
+2026-11-17 14:58:56,132 INFO app.timing Pipeline stage=candidate.retrieve_chunks latency=0.003974s success=True
+2026-11-17 14:58:56,133 INFO app.timing Pipeline stage=candidate.anonymize latency=0.000879s success=True
+2026-11-17 14:58:56,133 INFO app.timing Pipeline stage=candidate.prepare latency=0.005090s success=True
+2026-11-17 14:58:57,790 INFO app.timing Pipeline stage=output.read latency=0.006764s success=True
+2026-11-17 14:59:00,815 INFO app.timing Pipeline stage=output.read latency=0.004334s success=True
+2026-11-17 14:59:03,850 INFO app.timing Pipeline stage=output.read latency=0.004234s success=True
+2026-11-17 14:59:06,887 INFO app.timing Pipeline stage=output.read latency=0.003878s success=True
+2026-11-17 14:59:09,948 INFO app.timing Pipeline stage=output.read latency=0.005889s success=True
+2026-11-17 14:59:12,975 INFO app.timing Pipeline stage=output.read latency=0.004502s success=True
+2026-11-17 14:59:16,020 INFO app.timing Pipeline stage=output.read latency=0.004157s success=True
+2026-11-17 14:59:19,059 INFO app.timing Pipeline stage=output.read latency=0.006053s success=True
+2026-11-17 14:59:22,121 INFO app.timing Pipeline stage=output.read latency=0.004477s success=True
+2026-11-17 14:59:23,922 INFO app.services.llm_service LLM call prompt_tokens=1321 latency=27.80s tokens_per_second=16.44
+2026-11-17 14:59:23,923 INFO app.timing Pipeline stage=candidate.evaluate latency=27.788455s success=True
+2026-11-17 14:59:23,923 INFO app.timing Pipeline stage=candidate.verify latency=0.000552s success=True
+2026-11-17 14:59:23,931 INFO app.screening.graph Candidate saved jd=d0ea9896-24cd-4688-a7e3-5c270aabe1ce resume=c984cdaa-ba03-4a0b-88a5-6da11bd1fc6d
+2026-11-17 14:59:23,931 INFO app.timing Pipeline stage=candidate.save latency=0.008240s success=True
+2026-11-17 14:59:23,932 INFO app.timing Pipeline stage=screening.candidates latency=736.729227s success=True
+2026-11-17 14:59:23,952 INFO app.timing Pipeline stage=screening.rank latency=0.019569s success=True
+2026-11-17 14:59:25,147 INFO app.timing Pipeline stage=output.read latency=0.004286s success=True
+2026-11-17 14:59:28,194 INFO app.timing Pipeline stage=output.read latency=0.003952s success=True
+2026-11-17 14:59:29,927 INFO app.services.llm_service LLM call prompt_tokens=430 latency=5.97s tokens_per_second=9.55
+2026-11-17 14:59:29,927 INFO app.timing Pipeline stage=candidate.report_summary latency=5.972431s success=True
+2026-11-17 14:59:31,242 INFO app.timing Pipeline stage=output.read latency=0.004434s success=True
+2026-11-17 14:59:34,306 INFO app.timing Pipeline stage=output.read latency=0.004702s success=True
+2026-11-17 14:59:35,870 INFO app.services.llm_service LLM call prompt_tokens=422 latency=5.92s tokens_per_second=11.99
+2026-11-17 14:59:35,870 INFO app.timing Pipeline stage=candidate.report_summary latency=5.935006s success=True
+2026-11-17 14:59:37,337 INFO app.timing Pipeline stage=output.read latency=0.007296s success=True
+2026-11-17 14:59:39,249 INFO app.services.llm_service LLM call prompt_tokens=365 latency=3.38s tokens_per_second=11.56
+2026-11-17 14:59:39,250 INFO app.timing Pipeline stage=candidate.report_summary latency=3.375880s success=True
+2026-11-17 14:59:40,408 INFO app.timing Pipeline stage=output.read latency=0.005993s success=True
+2026-11-17 14:59:42,513 INFO app.services.llm_service LLM call prompt_tokens=341 latency=3.25s tokens_per_second=12.62
+2026-11-17 14:59:42,513 INFO app.timing Pipeline stage=candidate.report_summary latency=3.255348s success=True
+2026-11-17 14:59:43,450 INFO app.timing Pipeline stage=output.read latency=0.004589s success=True
+2026-11-17 14:59:45,413 INFO app.services.llm_service LLM call prompt_tokens=336 latency=2.89s tokens_per_second=12.46
+2026-11-17 14:59:45,414 INFO app.timing Pipeline stage=candidate.report_summary latency=2.892289s success=True
+2026-11-17 14:59:46,514 INFO app.timing Pipeline stage=output.read latency=0.005225s success=True
+2026-11-17 14:59:49,547 INFO app.services.llm_service LLM call prompt_tokens=418 latency=4.11s tokens_per_second=11.19
+2026-11-17 14:59:49,547 INFO app.timing Pipeline stage=candidate.report_summary latency=4.113004s success=True
+2026-11-17 14:59:49,572 INFO app.timing Pipeline stage=output.read latency=0.005014s success=True
+2026-11-17 14:59:52,613 INFO app.timing Pipeline stage=output.read latency=0.005479s success=True
+2026-11-17 14:59:54,663 INFO app.services.llm_service LLM call prompt_tokens=395 latency=5.11s tokens_per_second=11.94
+2026-11-17 14:59:54,663 INFO app.timing Pipeline stage=candidate.report_summary latency=5.108933s success=True
+2026-11-17 14:59:55,686 INFO app.timing Pipeline stage=output.read latency=0.005487s success=True
+2026-11-17 14:59:58,215 INFO app.services.llm_service LLM call prompt_tokens=340 latency=3.53s tokens_per_second=12.74
+2026-11-17 14:59:58,215 INFO app.timing Pipeline stage=candidate.report_summary latency=3.544186s success=True
+2026-11-17 14:59:58,711 INFO app.timing Pipeline stage=output.read latency=0.005414s success=True
+2026-11-17 15:00:01,784 INFO app.timing Pipeline stage=output.read latency=0.005588s success=True
+2026-11-17 15:00:02,871 INFO app.services.llm_service LLM call prompt_tokens=389 latency=4.64s tokens_per_second=10.13
+2026-11-17 15:00:02,871 INFO app.timing Pipeline stage=candidate.report_summary latency=4.648879s success=True
+2026-11-17 15:00:04,852 INFO app.timing Pipeline stage=output.read latency=0.005457s success=True
+2026-11-17 15:00:07,252 INFO app.services.llm_service LLM call prompt_tokens=312 latency=4.38s tokens_per_second=10.97
+2026-11-17 15:00:07,253 INFO app.timing Pipeline stage=candidate.report_summary latency=4.373582s success=True
+2026-11-17 15:00:07,875 INFO app.timing Pipeline stage=output.read latency=0.004666s success=True
+2026-11-17 15:00:10,914 INFO app.timing Pipeline stage=output.read latency=0.003966s success=True
+2026-11-17 15:00:11,674 INFO app.services.llm_service LLM call prompt_tokens=324 latency=4.42s tokens_per_second=9.95
+2026-11-17 15:00:11,675 INFO app.timing Pipeline stage=candidate.report_summary latency=4.415617s success=True
+2026-11-17 15:00:13,965 INFO app.timing Pipeline stage=output.read latency=0.006638s success=True
+2026-11-17 15:00:16,250 INFO app.services.llm_service LLM call prompt_tokens=350 latency=4.58s tokens_per_second=12.23
+2026-11-17 15:00:16,251 INFO app.timing Pipeline stage=candidate.report_summary latency=4.569645s success=True
+2026-11-17 15:00:16,999 INFO app.timing Pipeline stage=output.read latency=0.004608s success=True
+2026-11-17 15:00:20,043 INFO app.timing Pipeline stage=output.read latency=0.005800s success=True
+2026-11-17 15:00:20,306 INFO app.services.llm_service LLM call prompt_tokens=304 latency=4.05s tokens_per_second=10.63
+2026-11-17 15:00:20,306 INFO app.timing Pipeline stage=candidate.report_summary latency=4.048837s success=True
+2026-11-17 15:00:23,079 INFO app.timing Pipeline stage=output.read latency=0.004993s success=True
+2026-11-17 15:00:23,868 INFO app.services.llm_service LLM call prompt_tokens=321 latency=3.55s tokens_per_second=9.87
+2026-11-17 15:00:23,868 INFO app.timing Pipeline stage=candidate.report_summary latency=3.554477s success=True
+2026-11-17 15:00:26,135 INFO app.timing Pipeline stage=output.read latency=0.006320s success=True
+2026-11-17 15:00:27,400 INFO app.services.llm_service LLM call prompt_tokens=327 latency=3.52s tokens_per_second=9.95
+2026-11-17 15:00:27,400 INFO app.timing Pipeline stage=candidate.report_summary latency=3.524471s success=True
+2026-11-17 15:00:29,170 INFO app.timing Pipeline stage=output.read latency=0.005081s success=True
+2026-11-17 15:00:30,069 INFO app.services.llm_service LLM call prompt_tokens=313 latency=2.66s tokens_per_second=12.80
+2026-11-17 15:00:30,069 INFO app.timing Pipeline stage=candidate.report_summary latency=2.660575s success=True
+2026-11-17 15:00:32,245 INFO app.timing Pipeline stage=output.read latency=0.006331s success=True
+2026-11-17 15:00:34,264 INFO app.services.llm_service LLM call prompt_tokens=296 latency=4.19s tokens_per_second=11.46
+2026-11-17 15:00:34,264 INFO app.timing Pipeline stage=candidate.report_summary latency=4.188652s success=True
+2026-11-17 15:00:35,283 INFO app.timing Pipeline stage=output.read latency=0.003755s success=True
+2026-11-17 15:00:38,356 INFO app.timing Pipeline stage=output.read latency=0.004565s success=True
+2026-11-17 15:00:39,129 INFO app.services.llm_service LLM call prompt_tokens=278 latency=4.86s tokens_per_second=11.53
+2026-11-17 15:00:39,129 INFO app.timing Pipeline stage=candidate.report_summary latency=4.856786s success=True
+2026-11-17 15:00:41,423 INFO app.timing Pipeline stage=output.read latency=0.005519s success=True
+2026-11-17 15:00:43,451 INFO app.services.llm_service LLM call prompt_tokens=291 latency=4.33s tokens_per_second=12.25
+2026-11-17 15:00:43,451 INFO app.timing Pipeline stage=candidate.report_summary latency=4.314626s success=True
+2026-11-17 15:00:44,449 INFO app.timing Pipeline stage=output.read latency=0.005470s success=True
+2026-11-17 15:00:45,910 INFO app.services.llm_service LLM call prompt_tokens=256 latency=2.45s tokens_per_second=12.23
+2026-11-17 15:00:45,910 INFO app.timing Pipeline stage=candidate.report_summary latency=2.453462s success=True
+2026-11-17 15:00:47,497 INFO app.timing Pipeline stage=output.read latency=0.006124s success=True
+2026-11-17 15:00:49,595 INFO app.services.llm_service LLM call prompt_tokens=326 latency=3.69s tokens_per_second=13.29
+2026-11-17 15:00:49,595 INFO app.timing Pipeline stage=candidate.report_summary latency=3.677463s success=True
+2026-11-17 15:00:50,564 INFO app.timing Pipeline stage=output.read latency=0.007211s success=True
+2026-11-17 15:00:53,410 INFO app.services.llm_service LLM call prompt_tokens=243 latency=3.81s tokens_per_second=11.28
+2026-11-17 15:00:53,410 INFO app.timing Pipeline stage=candidate.report_summary latency=3.807037s success=True
+2026-11-17 15:00:53,649 INFO app.timing Pipeline stage=output.read latency=0.005968s success=True
+2026-11-17 15:00:56,701 INFO app.timing Pipeline stage=output.read latency=0.005298s success=True
+2026-11-17 15:00:58,792 INFO app.services.llm_service LLM call prompt_tokens=259 latency=5.38s tokens_per_second=12.47
+2026-11-17 15:00:58,792 INFO app.timing Pipeline stage=candidate.report_summary latency=5.375907s success=True
+2026-11-17 15:00:59,775 INFO app.timing Pipeline stage=output.read latency=0.007507s success=True
+2026-11-17 15:01:02,852 INFO app.timing Pipeline stage=output.read latency=0.005703s success=True
+2026-11-17 15:01:03,679 INFO app.services.llm_service LLM call prompt_tokens=252 latency=4.88s tokens_per_second=12.51
+2026-11-17 15:01:03,680 INFO app.timing Pipeline stage=candidate.report_summary latency=4.878880s success=True
+2026-11-17 15:01:05,920 INFO app.timing Pipeline stage=output.read latency=0.007190s success=True
+2026-11-17 15:01:07,896 INFO app.services.llm_service LLM call prompt_tokens=235 latency=4.20s tokens_per_second=13.08
+2026-11-17 15:01:07,897 INFO app.timing Pipeline stage=candidate.report_summary latency=4.209777s success=True
+2026-11-17 15:01:07,903 INFO app.timing Pipeline stage=screening.report latency=103.950310s success=True
+2026-11-17 15:01:07,905 INFO app.timing Pipeline stage=screening.total latency=868.773314s success=True
+2026-11-17 15:01:09,016 INFO app.timing Pipeline stage=output.read latency=0.004980s success=True
+2026-11-17 15:36:20,374 INFO app.services.embed_service CPU embedder loaded in 5.78s
+2026-11-17 15:36:25,048 INFO app.services.llm_service LLM loaded in 4.36s; GPU layers offloaded=37

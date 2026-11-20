@@ -1,0 +1,1065 @@
+{
+  "measured_at": "2026-11-19T11:39:26.729027+00:00",
+  "synthetic": true,
+  "scope": "Local function calls with real models/database; excludes network upload, queue wait and UI polling",
+  "jd_id": "a62b4627-70a7-40a9-839f-8154c095afce",
+  "resume_ids": [
+    "01f9041c-80e8-4ed2-bf1e-502d76c11c8d",
+    "d1846672-11cf-4fc2-8314-a3fb4dd6b6f7",
+    "c0a38216-b1a6-47e9-a903-036fee06ebc0",
+    "26d6c39a-d3f1-420e-b244-e5c13f283b57",
+    "c3908d5f-5da2-4b16-b0b7-c2d9368553ac",
+    "6afd0a92-c749-46b4-9d9b-7165236abce4",
+    "7763b581-7130-4f64-ac57-542c8f44b5ee",
+    "5e260057-57b4-4233-a94e-f96328b9152e",
+    "a15ae518-a280-488c-98c3-152358a05a63",
+    "868ba1e0-5886-4955-bcda-765f5c1fd3dc"
+  ],
+  "state": "done",
+  "ingestion_to_output_seconds": 151.9338712000008,
+  "cold_screening_seconds": 150.36825940000017,
+  "gpu_layers_offloaded": 37,
+  "warm_rerun": {
+    "jd_id": "3e7140f9-5177-4d87-b4a6-72d7ce57a98a",
+    "seconds": 0.4970656000004965,
+    "llm_calls": 0
+  },
+  "validation_failures": 0,
+  "stages": [
+    {
+      "stage": "startup.database",
+      "seconds": 0.049302799998258706,
+      "succeeded": true
+    },
+    {
+      "stage": "startup.embedder",
+      "seconds": 13.68468490000123,
+      "succeeded": true
+    },
+    {
+      "stage": "startup.llm",
+      "seconds": 2.18552500000078,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.0031810000000405125,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.009291700000176206,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.0012408999991748715,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.002965899999253452,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.002307200000359444,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.022865199998705066,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0008741000001464272,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.005123400000229594,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.05001399999855494,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.0029001000002608635,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.00815619999957562,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 8.660000094096176e-05,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006245000004128087,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0019886999998561805,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.12144640000042273,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0007511999992857454,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.004126499999983935,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.14175020000038785,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.003666999999040854,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.008802399999694899,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 9.11999995878432e-05,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.000696099999913713,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0016729999988456257,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.10484120000000985,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0008123999996314524,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.003723300000274321,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.12670910000088043,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.002250899999125977,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.00944809999964491,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00011110000014014076,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006678999998257495,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0017339999994874233,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.10727810000025784,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0027810000010504154,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.004453899999134592,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.13066760000037903,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.002058799998849281,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.012265299999853596,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00010649999967426993,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006729999986418989,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0019350000002305023,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.09843270000055782,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0008147999997163424,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.003419900000153575,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.12140309999995225,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.002255699999295757,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.01884500000051048,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 9.190000128000975e-05,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0005732000008720206,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0015265000001818407,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.14587659999961033,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.000835900000311085,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.003976500000135275,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.17583469999954104,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.0018897000009019393,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.00846359999923152,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00010929999916697852,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006070999988878611,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0017786999997042585,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.10787800000071002,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0010228999999526422,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.006495300000096904,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.12996120000025257,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.002104499999404652,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.008424299998296192,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00011219999942113645,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006457999988924712,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.0019608999991760356,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.11191129999861005,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0014338999990286538,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.005724700000428129,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.13396149999971385,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.0025581000008969568,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.033796200001233956,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00012040000001434237,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.0006379000005836133,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.001956800000698422,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.10909979999996722,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0009142999988398515,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.00929800000085379,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.16027930000018387,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.duplicate_check",
+      "seconds": 0.0021023999997851206,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.parse",
+      "seconds": 0.01175370000055409,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.preprocess",
+      "seconds": 0.00017309999930148479,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.metadata",
+      "seconds": 0.000632499999483116,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.chunk",
+      "seconds": 0.002419100001134211,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.embed",
+      "seconds": 0.1105323000010685,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.write_file",
+      "seconds": 0.0016649000008328585,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.store",
+      "seconds": 0.00498650000008638,
+      "succeeded": true
+    },
+    {
+      "stage": "ingest.total",
+      "seconds": 0.1362649999991845,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.create",
+      "seconds": 0.0100626999992528,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.jd_embed",
+      "seconds": 0.07854620000034629,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.jd_parse",
+      "seconds": 4.725973000000522,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.retrieve",
+      "seconds": 0.05619200000001001,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0009153999999398366,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.00300500000048487,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 13.181383299999652,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.0036213000003044726,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002130099999703816,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013869999929738697,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0024016999996092636,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 14.466024299999845,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.006158499998491607,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.003287600000476232,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00014179999925545417,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0043268999997962965,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 14.168289799999911,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.00337519999993674,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.00569300000097428,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001388000000588363,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0023076999987097224,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 11.601417899999433,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.003276400000686408,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.005903999999645748,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013810000018565916,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0019517000000632834,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 11.173341500001698,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.0029381000003922964,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002564399999755551,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013670000043930486,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.00217279999924358,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 10.923581399998511,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.0033143999989988515,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.005591099999946891,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001474999990023207,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.002066900000500027,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 12.588604399999895,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.0034892000003310386,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002868999999918742,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001339999998890562,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0024527999994461425,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 11.401459400000022,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.0068061000001762295,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002771399998891866,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001353999996354105,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0020583000004990026,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 11.59122109999953,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.00603419999970356,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002642800000103307,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013890000082028564,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0021118000004207715,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.evaluate",
+      "seconds": 11.957970999999816,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.verify",
+      "seconds": 0.004250300000421703,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.00436460000128136,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.rank",
+      "seconds": 0.009854300000370131,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 2.8740811999996367,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 2.440788899999461,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 2.9008732000002055,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 2.5418805000008433,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 2.3246799999997165,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 1.859952599999815,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 1.7722608000003675,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 1.7282216000003245,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 1.8391253000008874,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 1.8282635000014125,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.report",
+      "seconds": 22.135411000001113,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.total",
+      "seconds": 150.3543738999997,
+      "succeeded": true
+    },
+    {
+      "stage": "output.read",
+      "seconds": 0.003371899998455774,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.jd_parse",
+      "seconds": 0.006480300000475836,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.retrieve",
+      "seconds": 0.037720700000136276,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001658000001043547,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0021438000003399793,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002383499999268679,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001367999993817648,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.002197899999373476,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002452900000207592,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013830000170855783,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.002244100000098115,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.0019964000002801185,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001370999998471234,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0028293000013945857,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.004259399998773006,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013899999976274557,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.002057300000160467,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.0025789999999688007,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013530000069295056,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0023492000000260305,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.0019382999998924788,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013440000111586414,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0020953000002918998,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.002300699999977951,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.0001360000005661277,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.002090100000714301,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.0021226000008027768,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013579999904322904,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0026823999996850034,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.004357100000561331,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.anonymize",
+      "seconds": 0.00013550000039685983,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.prepare",
+      "seconds": 0.0026436000007379334,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.save",
+      "seconds": 0.004037000000607804,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.rank",
+      "seconds": 0.009009100000184844,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0012642000001505949,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0012572000014188234,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0015412000011565397,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0012475000003178138,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0012616999993042555,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.003187700000125915,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0013001000006624963,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0013896000000386266,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.0011224000008951407,
+      "succeeded": true
+    },
+    {
+      "stage": "candidate.report_summary",
+      "seconds": 0.00117109999882814,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.report",
+      "seconds": 0.034761999999318505,
+      "succeeded": true
+    },
+    {
+      "stage": "screening.total",
+      "seconds": 0.4867612000016379,
+      "succeeded": true
+    },
+    {
+      "stage": "output.read",
+      "seconds": 0.0031730999999126652,
+      "succeeded": true
+    }
+  ]
+}

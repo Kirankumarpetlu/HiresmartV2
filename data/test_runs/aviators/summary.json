@@ -1,0 +1,23 @@
+{
+  "jd_id": "a3c12c12-6db0-4d4a-8466-2e852f9fc3d2",
+  "jd_file": "FY'26 NCG Full Time SWE JD_Visa.pdf",
+  "ingestion": {
+    "resumes": 25,
+    "chunks": 180,
+    "max_chunk_tokens": 382
+  },
+  "status": {
+    "total": 10,
+    "done": 10,
+    "errors": 0,
+    "filtered_out": 0,
+    "state": "done",
+    "error_message": null
+  },
+  "evidence_quotes_checked": 29,
+  "unverified_evidence_flags": 14,
+  "summary_fallbacks": 0,
+  "score_formula_checked": true,
+  "selected_resumes_only": true,
+  "human_accuracy_labels_available": false
+}

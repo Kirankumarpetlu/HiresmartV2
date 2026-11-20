@@ -1,0 +1,143 @@
+{
+  "uploads": [
+    {
+      "id": "c3570cb0-f2c4-4f30-a420-8aa5446b93c0",
+      "status": "duplicate",
+      "file_name": "Abhinav_Kumar_Resume.pdf"
+    },
+    {
+      "id": "a6d6193e-cb6a-419e-ae43-47887ae58aa4",
+      "status": "duplicate",
+      "file_name": "Abhishek_Chaudhari.pdf"
+    },
+    {
+      "id": "24b49e18-2a94-45b3-87e0-889996d6b01a",
+      "status": "duplicate",
+      "file_name": "adarsh_res6-1.pdf"
+    },
+    {
+      "id": "56916f15-d482-418c-8731-9baad3e4911b",
+      "status": "duplicate",
+      "file_name": "Anirudh_resume.pdf"
+    },
+    {
+      "id": "73eb17d2-94f7-470a-ad16-2ef566a15b7d",
+      "status": "duplicate",
+      "file_name": "AnujYadav-3AugIIITM.pdf"
+    },
+    {
+      "id": "c6329351-7575-4c42-8675-f08391172759",
+      "status": "duplicate",
+      "file_name": "Ashutosh_resume.pdf"
+    },
+    {
+      "id": "e670dbfe-ace3-45c3-b336-7539a7a104dd",
+      "status": "duplicate",
+      "file_name": "Atharva_Arbat_AI_v3.pdf"
+    },
+    {
+      "id": "cb213a94-8f35-4156-a69e-25980bbff35a",
+      "status": "duplicate",
+      "file_name": "Daiwik_s Saxena Resume.pdf"
+    },
+    {
+      "id": "c984cdaa-ba03-4a0b-88a5-6da11bd1fc6d",
+      "status": "duplicate",
+      "file_name": "henilsinh_raj.pdf"
+    },
+    {
+      "id": "5eb4d019-48a9-4185-adba-ce46a02c031e",
+      "status": "duplicate",
+      "file_name": "Jayanth_Resume_mondee.pdf"
+    },
+    {
+      "id": "39007b1f-1108-430c-b8eb-df801cd4e696",
+      "status": "duplicate",
+      "file_name": "KiranKumarPetlu_Resume_AI.pdf"
+    },
+    {
+      "id": "d6a8acc4-84bf-4374-99e6-4d53268cd785",
+      "status": "duplicate",
+      "file_name": "Likhil_resume.pdf"
+    },
+    {
+      "id": "b0997210-8e73-4784-8ec0-528a3af1f727",
+      "status": "duplicate",
+      "file_name": "Madhav Yadav Résumé.pdf"
+    },
+    {
+      "id": "df309ea7-7fab-408d-a9ea-56cac0ee15f6",
+      "status": "duplicate",
+      "file_name": "Mageshwari M.pdf"
+    },
+    {
+      "id": "d3b3fa9e-1926-4a28-94b6-e288544b8149",
+      "status": "duplicate",
+      "file_name": "Mayur_Ramani_Resume.pdf"
+    },
+    {
+      "id": "47454ad6-d7ba-4b64-8978-ce7d27d2b228",
+      "status": "duplicate",
+      "file_name": "Nikshith.pdf"
+    },
+    {
+      "id": "a411b476-1ec3-4d0e-a960-344d90d6903a",
+      "status": "duplicate",
+      "file_name": "Riteesh Thiruveedhula.pdf"
+    },
+    {
+      "id": "3bf14a58-48be-4781-84cd-8952b054527a",
+      "status": "duplicate",
+      "file_name": "Rohith Adithya Sangineedi Resume.pdf"
+    },
+    {
+      "id": "f5a14d8a-82ce-4563-b52b-efc07e549275",
+      "status": "duplicate",
+      "file_name": "Sabrin_S_Resume.pdf"
+    },
+    {
+      "id": "053ec2a2-bde7-4deb-b299-1fdae745b902",
+      "status": "duplicate",
+      "file_name": "ShikherJain_Resume.pdf"
+    },
+    {
+      "id": "fff4fe1d-5007-4949-a9c4-f7ceff3e0969",
+      "status": "duplicate",
+      "file_name": "Sravan_Kumar_Reddy_Resume_DataScience.pdf"
+    },
+    {
+      "id": "20c2a20e-3a83-48ae-a9e8-e17a3757e3f3",
+      "status": "duplicate",
+      "file_name": "T Mohan Lakshmi Ganesh_Resume.pdf"
+    },
+    {
+      "id": "8685fda7-504f-43cb-ad4c-ebd72d95a437",
+      "status": "duplicate",
+      "file_name": "Tanveer Main Resume.pdf"
+    },
+    {
+      "id": "792b0170-46f4-4eaf-ab54-05ed556b6f64",
+      "status": "duplicate",
+      "file_name": "VishalDaware_Resume.pdf"
+    },
+    {
+      "id": "f699156d-ec41-46f1-87a9-5c888084365e",
+      "status": "duplicate",
+      "file_name": "Yashwanth Krishna.pdf"
+    }
+  ],
+  "screenings": {
+    "FY'26 NCG Full Time SWE JD_Visa.pdf": {
+      "jd_id": "d0ea9896-24cd-4688-a7e3-5c270aabe1ce",
+      "sha256": "c03ae2243d57b2c8ecba7bd437335781c6f893632ec523b0fd803b7d42722c4e",
+      "status": {
+        "total": 25,
+        "done": 25,
+        "errors": 0,
+        "filtered_out": 0,
+        "state": "done",
+        "error_message": null
+      }
+    }
+  }
+}

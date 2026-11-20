@@ -1,0 +1,8 @@
+<p>Hi {{ first_name }},</p>
+<p>Thank you for applying for {{ job_title }} with {{ company }}.</p>
+{% if selected %}
+<p>You have been selected for the further round. {{ next_step }}</p>
+{% else %}
+<p>We have decided to move forward with other applications.</p>
+{% endif %}
+<p>Best regards,<br>{{ recruiter }}{% if recruiter_email %}<br>{{ recruiter_email }}{% endif %}</p>

@@ -1,0 +1,19 @@
+flowchart TD
+    Input["Shortlisted candidate<br/>app/screening/graph.py"]
+    Eval["Evaluator agent<br/>app/screening/evaluator.py"]
+    GitHub["GitHub agent<br/>app/screening/github_agent.py"]
+    Join["Match GitHub projects and verify skill evidence<br/>app/screening/github_agent.py · app/screening/verifier.py"]
+    Ranking["Save results and compute rank in Python<br/>app/screening/ranking.py"]
+    Report["Report agent<br/>app/screening/report.py"]
+    Email["Email agent<br/>app/screening/notify_policy.py · app/notify/notifications.py"]
+    Gate{"Recruiter approval<br/>Default policy"}
+    Dry["Dry run<br/>Record the outcome"]
+    SMTP["Live delivery<br/>app/notify/mailer.py"]
+
+    Input -->|Anonymized evidence| Eval
+    Input -->|Public repository evidence| GitHub
+    Eval -->|Skill and fit judgments| Join
+    GitHub -->|Profile and project evidence| Join
+    Join --> Ranking --> Report --> Email --> Gate
+    Gate -->|Dry run is enabled| Dry
+    Gate -->|Approved and live mode| SMTP
