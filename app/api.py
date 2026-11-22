@@ -135,6 +135,15 @@ def delete_resume(resume_id: UUID):
 
 @app.post("/screenings", status_code=202)
 async def start_screening(request: Request):
+    return await queue_screening(request, send_notifications=True)
+
+
+@app.post("/screenings/rank-only", status_code=202)
+async def start_rank_only_screening(request: Request):
+    return await queue_screening(request, send_notifications=False)
+
+
+async def queue_screening(request: Request, *, send_notifications: bool):
     from pydantic import ValidationError
 
     try:
@@ -160,6 +169,7 @@ async def start_screening(request: Request):
                 payload["wait_for_github"] = str(form["wait_for_github"])
         else:
             payload = await request.json()
+        payload["send_notifications"] = send_notifications
         parsed = ScreeningRequest.model_validate(payload)
     except (ValueError, ValidationError, TypeError):
         raise HTTPException(422, "Provide JD text (10-30000 characters) or a readable PDF/DOCX/TXT file, a valid shortlist size, and weights summing to 1")

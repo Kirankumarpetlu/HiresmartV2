@@ -305,10 +305,12 @@ If 4 GB VRAM is insufficient, lower `LLM_N_CTX` (for example 3072) or `LLM_N_GPU
 # Terminal 1: always one worker
 uvicorn app.api:app --host 127.0.0.1 --port 8000 --workers 1
 # Terminal 2
-streamlit run app/ui.py --server.address 127.0.0.1 --server.port 8501 --server.headless true
+python app.py
 ```
 
 Start the GitHub worker in a separate terminal with `python -m app.workers.github_worker`. On a 4 GB GPU, set `LLM_N_GPU_LAYERS=0` in that terminal before startup so optional GitHub project matching uses CPU while the API owns the GPU.
+
+In Streamlit, upload resumes and select which ones to screen under **Job description**. Open **Results** for the candidate ranking and GitHub evidence. Streamlit starts ranking-only runs and skips the email workflow.
 
 ### Decisions
 
@@ -326,6 +328,7 @@ Open `http://127.0.0.1:8501`; API docs are at `http://127.0.0.1:8000/docs`. Uplo
 | `PATCH /resumes/{id}/contact` | set `{"email":"candidate@example.org"}`; return a masked address |
 | `DELETE /resumes/{id}` | DB cascade plus source removal |
 | `POST /screenings` | queue JSON/multipart request; return `jd_id` (202) |
+| `POST /screenings/rank-only` | same screening input and response, with email disabled for the run |
 | `GET /screenings/{id}/status` | run state and candidate counts |
 | `GET /screenings/{id}/results` | partial/final results and evidence |
 | `POST /screenings/{id}/rerank` | score/rank stored evaluations |

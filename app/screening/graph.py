@@ -236,9 +236,13 @@ def report_node(state: ScreeningState) -> dict:
 
 
 def github_gate(state: ScreeningState) -> dict:
-    if state["status"] == "awaiting_github":
+    waiting = state["status"] == "awaiting_github"
+    if waiting:
         interrupt({"jd_id": state["jd_id"], "message": "Waiting for queued GitHub evidence."})
         execute("UPDATE job_descriptions SET github_waiting=false WHERE id=%s", (state["jd_id"],))
+    if not state.get("request", {}).get("send_notifications", True):
+        return {"status": "done"}
+    if waiting:
         return {"status": "notifying"}
     return {}
 
@@ -301,7 +305,8 @@ builder.add_conditional_edges("fan_out_candidates", dispatch_candidates, ["candi
 builder.add_edge("candidate", "rank")
 builder.add_edge("rank", "report")
 builder.add_edge("report", "github_gate")
-builder.add_edge("github_gate", "select_for_email")
+builder.add_conditional_edges("github_gate",
+    lambda state: END if state["status"] == "done" else "select_for_email", [END, "select_for_email"])
 builder.add_edge("select_for_email", "draft_emails")
 builder.add_edge("draft_emails", "approval_gate")
 builder.add_edge("approval_gate", "send_emails")

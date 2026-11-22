@@ -415,45 +415,46 @@ def test_api_exposes_stored_github_result(monkeypatch):
     assert "Project match" in response["github_json"]["score_explanation"]
 
 
-def test_ui_renders_github_details_submits_weight_and_reviews_email(monkeypatch):
+def test_ui_runs_ranking_only_and_renders_skill_and_github_evidence(monkeypatch):
     from streamlit.testing.v1 import AppTest
 
+    job_id = str(uuid4())
     github = GithubResult(status="ok", github_score=80, summary="Checked a public repository.",
         project_matches=[GithubProjectMatch(resume_project="Project", match="verified", reason="Direct link", verified=True)],
         red_flags=["An example flag."]).model_dump()
     row = {"rank": 1, "resume_id": str(uuid4()), "file_name": "demo.pdf", "final_score": 84,
            "status": "done", "recommendation": "interview", "summary": "Example candidate.", "strengths": [],
-           "gaps": [], "red_flags": [], "github_json": github, "github_score": 80}
+           "gaps": [], "red_flags": [], "github_json": github, "github_score": 80, "github_status": "ok",
+           "skill_report": [{"skill": "Python", "is_must_have": True, "level": 3, "confidence": .9,
+                             "reasoning": "Owned a service.", "evidence": ["Built Python services."]}]}
     requests = []
 
     def respond(method, url, **kwargs):
         requests.append((method, url, kwargs))
-        if url.endswith("/status"):
-            return httpx.Response(200, json={"done": 1, "errors": 0, "filtered_out": 0, "total": 1, "state": "awaiting_approval"},
-                                  request=httpx.Request(method, url))
-        if url.endswith("/notifications"):
-            draft = {"resume_id": row["resume_id"], "email_type": "selected", "subject": "Next steps",
-                     "body_preview": "You have been selected for the further round.", "status": "drafted",
-                     "masked_address": "a***@example.org", "decision_reason": {"rank": 1, "checks": {}}, "last_error": None}
-            return httpx.Response(200, json={"notifications": [draft], "dry_run": True, "awaiting_review": True},
-                                  request=httpx.Request(method, url))
-        if url.endswith("/github"):
-            return httpx.Response(200, json={"counts": {"ok": 1}, "total": 1, "queue_depth": 0,
-                "quota": {}, "mixed_evidence": False}, request=httpx.Request(method, url))
-        return httpx.Response(200, json=[] if url.endswith("/resumes") else [row], request=httpx.Request(method, url))
+        responses = {
+            ("GET", "resumes"): [{"id": row["resume_id"], "file_name": row["file_name"]}],
+            ("POST", "rank-only"): {"jd_id": job_id},
+            ("GET", "status"): {"done": 1, "errors": 0, "filtered_out": 0, "total": 1, "state": "done"},
+            ("GET", "github"): {"counts": {"ok": 1}, "scored": 1, "queue_depth": 0, "mixed_evidence": False},
+            ("GET", "results"): [row],
+            ("POST", "rerank"): [row],
+        }
+        return httpx.Response(200, json=responses[(method, url.rsplit("/", 1)[-1])], request=httpx.Request(method, url))
 
     monkeypatch.setattr("requests.request", respond)
     test = AppTest.from_file(Path(__file__).resolve().parents[1] / "app" / "ui.py", default_timeout=30).run()
-    test.text_input[0].set_value(str(uuid4())).run()
+    test.multiselect[0].set_value([row["resume_id"]])
+    test.text_area[0].set_value("Python developer required").run()
+    next(button for button in test.button if button.label == "Run screening").click().run()
     assert not test.exception
-    assert len(test.dataframe) >= 2 and any("80/100" in item.value for item in test.markdown)
+    assert test.text_input[0].value == job_id
+    assert any(url.endswith("/screenings/rank-only") and data["json"]["resume_ids"] == [row["resume_id"]]
+               for _, url, data in requests)
+    assert any("Proficiency" in item.value.columns for item in test.dataframe)
+    assert any("Example candidate." == item.value for item in test.text)
     assert any("GitHub score 80/100." in item.value for item in test.text)
     rerank = next(button for button in test.button if button.label == "Re-rank stored evaluations")
     rerank.click().run()
     assert not test.exception
     assert any(url.endswith("/rerank") and data["json"]["github"] == .10 for _, url, data in requests)
-    assert any("Dry run is enabled" in warning.value for warning in test.warning)
-    next(button for button in test.button if button.label == "Record dry-run approval").click().run()
-    assert not test.exception
-    assert any(url.endswith("/approve") and data["json"]["resume_ids"] == [row["resume_id"]]
-               for _, url, data in requests)
+    assert all("/notifications" not in url for _, url, _ in requests)
