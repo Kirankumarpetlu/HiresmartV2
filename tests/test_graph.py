@@ -88,14 +88,25 @@ def test_resume_phase_saves_and_queues_without_calling_github(monkeypatch):
     def collect(*args):
         pytest.fail("Resume evaluation must not call GitHub")
 
+    def email(*args, **kwargs):
+        pytest.fail("A ranking-only run must skip the email workflow")
+
     def evaluate(*args):
         return EvaluatorOutput(skills=[], fit=FitScores(experience=50, domain=0, education=0, notes=""), red_flags=[])
 
     monkeypatch.setattr(module, "collect", collect)
     monkeypatch.setattr(module, "evaluate", evaluate)
+    monkeypatch.setattr(module.settings, "email_auto_send", True)
+    monkeypatch.setattr(module.settings, "email_dry_run", False)
+    for method in ("draft", "review", "deliver"):
+        monkeypatch.setattr(module.notifications, method, email)
     local = module.builder.compile(checkpointer=InMemorySaver())
-    result = local.invoke({"jd_id": "job", "request": {"jd_text": "Engineer"},
-        "weights": {}, "candidate_results": []}, module.thread_config("job"))
+    config = module.thread_config("job")
+    updates = list(local.stream({"jd_id": "job", "request": {"jd_text": "Engineer", "send_notifications": False},
+        "weights": {}, "candidate_results": []}, config, stream_mode="updates"))
+    assert [next(iter(update)) for update in updates][-3:] == ["rank", "report", "github_gate"]
+    result = local.get_state(config).values
+    assert result["status"] == "done"
     assert queued == [("job", module.settings.github_shortlist_size)]
     assert result["candidate_results"][0]["status"] == "done"
     saved = next(params for sql, params in changes if "status='done'" in sql)

@@ -183,6 +183,7 @@ class ScreeningRequest(BaseModel):
     resume_ids: list[UUID] | None = Field(default=None, min_length=1)
     weights: Weights = Field(default_factory=Weights)
     wait_for_github: bool = False
+    send_notifications: bool = True
 
 
 class GithubExtendRequest(BaseModel):
